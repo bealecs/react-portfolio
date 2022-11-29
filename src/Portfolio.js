@@ -4,10 +4,8 @@ import './Portfolio.css';
 import { root } from './index';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
+import { FeedbackForm } from "./Feedback";
 
-function displayProjects(){
-  root.render(<Meal />);
-}
 
 export function Portfolio() {
   const logo = require('./logo512.jpg');
@@ -75,12 +73,8 @@ export function Portfolio() {
         for my portfolio. Make sure to check out my Resume listed in the navigation bar. Thank you again for visiting. :)<br /><br /> -Clif
         </p>
       </section>
+      <FeedbackForm />
       <Footer />
-      <form className="feedback">
-        <label>If you took time to check out my portfolio today, feel free to leave me a comment with some feedback. Any feedback is greatly appreciated!</label>
-          <input type="text" className="feedback-box" placeholder="Feedback here.." />
-          <input type="submit" className="submit-feedback" value="Submit" />
-      </form>
     </div>
   )
 }
