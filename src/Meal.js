@@ -20,7 +20,7 @@ export const Meal = () => {
     return (
         <div className='meal-container'>
         <div className='home-return-box'>
-        <Link to="/" className='home-nav'>Back to home</Link>
+        <Link to="/" className='home-nav'>Back to Home</Link>
         </div>
         <h1 className='title1'>Meal Suggestion Generator</h1>
         <div className='button'>

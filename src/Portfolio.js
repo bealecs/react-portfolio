@@ -1,18 +1,41 @@
 import React from "react";
-import { Meal } from "./Meal";
 import './Portfolio.css';
-import { root } from './index';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
 import { FeedbackForm } from "./Feedback";
+import { ProfileImage } from "./ProfileImage";
+import { ProjectListing } from "./ProjectListing";
 
 
 export function Portfolio() {
-  const logo = require('./logo512.jpg');
   const coding = require('./coding.jpg');
   const jet = require('./jet.jpg');
   const homePic = require('./home.jpg');
   const dream = require('./dream.jpg');
+ 
+  const [NavState, setNavState] = React.useState(false);
+
+  const handleClick = () => {
+    if (!NavState) {
+      setNavState(true);
+    } else if (NavState) {
+      console.log('already showing projects..');
+    } else {
+      alert('Something went wrong...');
+      console.log('Something went wrong...');
+    }
+  }
+  const handleClick2 = () => {
+    if (NavState) {
+      setNavState(false);
+    } else if (!NavState) {
+      console.log('already showing the home page...');
+    } else {
+      alert('Something went wrong...');
+      console.log('Something went wrong...');
+    }
+  }
+
 
   return (
     <div className="container">
@@ -20,11 +43,9 @@ export function Portfolio() {
       <section className="body">
         <h1 className="name">Clifton Beale</h1>
         <h3 className="goal">Aspiring Front-End Web Developer</h3>
-        <Navbar />
+        <Navbar action={handleClick2} onClick={handleClick} />
       </section>
-      <div className="container3">
-      <img src={logo} alt='profile-img' className='profile-img' />
-      </div>
+      {NavState ? <ProjectListing /> : <ProfileImage />}
       </div>
       <section className="about">
         <h2 className="about">Get to know me</h2>

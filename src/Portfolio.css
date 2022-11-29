@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container {
     background-color: rgb(196, 186, 186);
@@ -9,7 +10,8 @@
 .container2 {
     display: inline-flex;
     background-image: url("./background.gif");
-    background-size: contain;
+    background-size:contain;
+    width: 100%;
     color: white;
     border-bottom: 1px solid white;
 }
@@ -57,28 +59,90 @@ img.profile-img {
 img.profile-img:hover {
     cursor: none;
 }
-.navbox {
+.project-listing {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.project-anchors {
+    width: 50%;
+}
+.project-link {
+    width: 50%;
+}
+.project-buttons {
+    cursor: pointer;
+    padding: 50px;
+    background-color: rgba(4, 4, 116, 0.974);
+    color: white;
+    font-size: 22px;
+    margin: 20px;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: background-color ease-out 0.4s, width ease-out 0.4s;
+}
+.project-buttons:hover {
+    background-color: white;
+    border: 2px solid yellow;
+    color: rgba(4, 4, 116, 0.974);
+    width: 100%;
+}
+.navbox-home {
     text-align: center;
-    padding: 15px;
+    padding: 50px;
     margin: 60px;
     height: 50px;
-    border: 1px solid white;
-    background-color: black;
+    font-size: 28px;
+    border: 2px solid white;
+    background-color: rgba(4, 4, 116, 0.974);
     border-radius: 10px;
     width: 40%;
     transition: background-color 0.2s;
     transition: width ease-out 0.4s;
 }
-.navbox:hover {
+.navbox-home:hover {
     text-align: center;
-    padding: 15px;
+    padding: 50px;
     margin: 60px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid yellow;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    color: rgba(4, 4, 116, 0.974);
+    cursor: pointer;
+}
+.nav-item {
+    color: white;
+    transition: color ease-out 0.4s;
+}
+.nav-item:hover {
+    color: rgba(4, 4, 116, 0.974);
+}
+.navbox {
+    text-align: center;
+    padding: 50px;
+    font-size: 28px;
+    margin: 60px;
+    height: 50px;
+    border: 1px solid white;
     background-color: rgba(4, 4, 116, 0.974);
     border-radius: 10px;
-    width: 70%;
-    color: black;
+    width: 40%;
+    transition: background-color 0.2s, width ease-out 0.4s;
+}
+.navbox:hover {
+    text-align: center;
+    padding: 50px;
+    margin: 60px;
+    height: 50px;
+    border: 1px solid yellow;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
 section.about {
@@ -174,11 +238,51 @@ footer {
     section.body {
         width: 100%;
     }
+    .container2 {
+        height: 500px;
+    }
     .navbox {
         padding: 10px;
         margin: 20px;
         margin-left: auto;
-        width: 100%;
+        width: 50%;
         
+    }
+    .navbox-home {
+        padding: 10px;
+        margin: 20px;
+        margin-left: auto;
+        width: 50%;
+    }
+    .navbox:hover {
+        padding: 10px;
+        margin: 20px;
+        margin-left: auto;
+        width: 50%;
+    }
+    .navbox-home:hover {
+        padding: 10px;
+        margin: 20px;
+        margin-left: auto;
+        width: 50%;
+    }
+    .project-buttons {
+        width: 70%;
+    }
+    .project-buttons:hover {
+        width: 70%;
+    }
+    .container3 {
+        position: relative;
+        right: 200px;
+        top: 200px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+
+    .container3 {
+        position: relative;
+        right: 200px;
+        top: 140px;
     }
 }
