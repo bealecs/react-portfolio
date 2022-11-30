@@ -148,7 +148,7 @@ img.profile-img:hover {
 section.about {
     border-top: 10px solid black;
     line-height: 2;
-    text-align: center;
+    text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .image-cards {
@@ -162,6 +162,7 @@ section.about {
 .image-cards p {
     height: auto;
     margin: 50px;
+    text-align: justify;
 }
 .coding {
     width: 400px;
@@ -214,13 +215,14 @@ footer {
 }
 .feedback-box {
     margin: auto;
-    width: 900px;
+    width: 90%;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 2;
     border-radius: 10px;
+    overflow: hidden;
 }
 .submit-feedback {
     margin: auto;
@@ -243,6 +245,7 @@ footer {
     }
     .navbox {
         padding: 10px;
+        font-size: 16px;
         margin: 20px;
         margin-left: auto;
         width: 50%;
@@ -250,6 +253,7 @@ footer {
     }
     .navbox-home {
         padding: 10px;
+        font-size: 16px;
         margin: 20px;
         margin-left: auto;
         width: 50%;
@@ -272,17 +276,87 @@ footer {
     .project-buttons:hover {
         width: 70%;
     }
-    .container3 {
+    .profile-img {
         position: relative;
-        right: 200px;
-        top: 200px;
+        bottom: 50px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .project-buttons {
+        padding: 5px;
+        margin: 10px;
+        position: relative;
+        top: 115px;
+        width: 100%;
+        font-size: 12px;
+    }
+    .project-buttons:hover {
+        width: 100%;
+    }
+    .navbox {
+        position: relative;
+        
+    }
+    .navbox-home {
+        position: relative;
+        
+    }
+    .image-cards p {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 485px) {
+    section img {
+        display: none;
+    }
+    .profile-img {
+        height: 35%;
+        position: relative;
+    }
+    section p {
+        padding: 0;
+        text-align: justify;
+    }
+    .continued {
+        text-align: justify;
+        margin: 10px;
+        padding: 5px;
+    }
+    .feedback-box {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .profile-img {
+        display: none;
+    }
+    .project-buttons {
+        padding: 5px 25px;
+        font-size: 10px;
+        width: 150%;
+    }
+    .project-buttons:hover {
+        width: 150%;
+    }
+    .navbox-home {
+        display: none;
+    }
+    .project-buttons {
+        position: relative;
     }
 }
 @media only screen and (max-width: 1000px) {
 
+    .navbox:hover {
+        width: 40%;
+    }
+    .navbox-home:hover {
+        width: 40%;
+    }
     .container3 {
         position: relative;
         right: 200px;
-        top: 140px;
+        top: 200px;
+        
     }
 }

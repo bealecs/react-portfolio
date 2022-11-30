@@ -80,7 +80,7 @@ export function Portfolio() {
           </div>
         </div>
         <div className="underline-section"></div>
-        <p>
+        <p className="continued">
         As I said earlier, I started off learning Java. I was a part of a community that was 'modding' different games and releasing open source versions of their own creations.
         This was an interesting hobby for me, and I found it consuming a lot of my time outside of sports and school. This went on for several years, until I released my own 
         version with my own modifications. It felt really cool to create something from nothing using only the tools I had taught myself. Now that I am getting back into programming,
@@ -91,7 +91,7 @@ export function Portfolio() {
         The projects listed in the projects tab are
         from past work that I have been completing to advance my learning. They are completed solely using HTML, CSS, and JavaScript. For now, there are only two listed, but there will
         be more added in the near future. If you have read this far, I want to personally thank you! There is a form at the bottom of this page for any feedback that you may recommend
-        for my portfolio. Make sure to check out my Resume listed in the navigation bar. Thank you again for visiting. :)<br /><br /> -Clif
+        for my portfolio. Thank you again for visiting. :)<br /><br /> -Clif
         </p>
       </section>
       <FeedbackForm />
