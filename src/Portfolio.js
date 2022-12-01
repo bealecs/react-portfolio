@@ -94,7 +94,7 @@ export function Portfolio() {
         for my portfolio. Thank you again for visiting. :)<br /><br /> -Clif
         </p>
       </section>
-      <FeedbackForm />
+      <FeedbackForm /> 
       <Footer />
     </div>
   )
