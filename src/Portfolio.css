@@ -4,10 +4,10 @@
 }
 .container {
     background-color: rgb(196, 186, 186);
-    background-size: cover;
+    background-size: 60rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("./background.gif");
-    background-size:contain;
+    
 }
 .about-container {
     display: flex;
@@ -20,7 +20,6 @@
     margin: 2% 1%;
 }
 .welcome-container {
-
     width: 100%;
 }
 .welcome-container h2 {
@@ -116,7 +115,7 @@ img.profile-img:hover {
     border: 2px solid white;
     background-color: rgba(4, 4, 116, 0.974);
     border-radius: 10px;
-    width: 20%;
+    width: 100%;
     transition: background-color 0.2s, width ease-out 0.4s;
     color: white;
 }
@@ -129,7 +128,7 @@ img.profile-img:hover {
     border: 1px solid yellow;
     background-color: white;
     border-radius: 10px;
-    width: 20%;
+    width: 100%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
@@ -151,7 +150,7 @@ img.profile-img:hover {
     border: 1px solid white;
     background-color: rgba(4, 4, 116, 0.974);
     border-radius: 10px;
-    width: 20%;
+    width: 100%;
     color: white;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
@@ -164,10 +163,11 @@ img.profile-img:hover {
     border: 1px solid yellow;
     background-color: white;
     border-radius: 10px;
-    width: 20%;
+    width: 100%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
+
 section.about {
     border-top: 10px solid black;
     line-height: 2;
@@ -181,6 +181,11 @@ section.about {
     text-align: center;
     height: auto;
     margin: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1%;
 }
 .image-cards p {
     height: auto;
@@ -229,9 +234,25 @@ section.about {
     margin-bottom: 3%;
 }
 .about-section {
-    background-color: rgba(255, 248, 220, 0.9);
+    background-color: rgba(255, 248, 220, 1);
+    border: 8px solid white;
     width: 60%;
     margin: auto;
+}
+.about-section h2 {
+    text-align: center;
+    color: dark;
+}
+.middle-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slick-dots li.slick-active button:before {
+    color:White !important;
+}
+.slick-dots li.slick-inactive button {
+    color:yellow !important;
 }
 footer {
     text-align: center;

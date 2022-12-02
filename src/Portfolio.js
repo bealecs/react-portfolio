@@ -6,6 +6,7 @@ import { FeedbackForm } from "./Feedback";
 import { ProfileImage } from "./ProfileImage";
 import { ProjectListing } from "./ProjectListing";
 import { Welcome } from "./Welcome";
+import SimpleSlider from "./Carousel";
 
 
 export function Portfolio() {
@@ -37,9 +38,10 @@ export function Portfolio() {
   return (
     <div className="container">
       <Welcome />
+      <div className="middle-div">
       <Navbar home={handleClick2} projects={handleClick}/>
-      {/* {NavState ? <ProjectListing /> : <ProfileImage />} */}
-      {/*<About />*/}
+      {NavState ? <ProjectListing /> : <SimpleSlider />} 
+      </div>
       <Footer /> 
       <FeedbackForm />
     </div>

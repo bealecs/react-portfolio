@@ -1,6 +1,5 @@
 import React from "react";
 import { ProfileImage } from "./ProfileImage";
-import { AboutContainer } from "./AboutContainer";
 import SimpleSlider from "./Carousel";
 
 export function Welcome() {
@@ -13,9 +12,6 @@ export function Welcome() {
             </section>
             <ProfileImage />
             </div>
-            <section className="about-section">
-                <SimpleSlider />
-            </section>
          </div>
     );
 }

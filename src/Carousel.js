@@ -19,7 +19,8 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="slider-container">
+      <div className="about-section">
+        <div className="slider-container">
         <h2> Get to know me</h2>
         <Slider {...settings}>
           <div>
@@ -62,6 +63,7 @@ export default class SimpleSlider extends Component {
         for my portfolio. Thank you again for visiting. :)</p>
           </div>
         </Slider>
+        </div>
       </div>
     );
   }
