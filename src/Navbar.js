@@ -6,12 +6,11 @@ export function Navbar(props) {
 
     return (
         <nav className="navbar">
-          <div className="navbox-home" onClick={props.action}>Home
-            {/* <button className='nav-button' onClick={props.action}>Home</button> */}
+          <div className="navbox-home" onClick={props.home}>Home
             <Link to="/" className="nav-item"></Link> 
           </div>
-          <div className="navbox" onClick={props.onClick}>Projects
-            {/* <button className='nav-button' onClick={props.onClick}>Projects</button> */}
+
+          <div className="navbox" onClick={props.projects}>Projects  
             <Link to="/" className="nav-item"></Link>
           </div>
         </nav>

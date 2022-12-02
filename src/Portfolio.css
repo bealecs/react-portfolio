@@ -6,17 +6,33 @@
     background-color: rgb(196, 186, 186);
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("./background.gif");
+    background-size:contain;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.about-container img {
+    width: 20%;
+    margin: 2% 1%;
+}
+.welcome-container {
+
+    width: 100%;
+}
+.welcome-container h2 {
+    color: white;
+    text-align: center;
 }
 .container2 {
     display: inline-flex;
-    background-image: url("./background.gif");
-    background-size:contain;
-    width: 100%;
     color: white;
-    border-bottom: 1px solid white;
 }
 .container3 {
-    background-size: auto;
+    height: fit-content;
 }
 section.body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,7 +40,7 @@ section.body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 900px;
+  height: fit-content;
 }
 h1.name {
     padding: 15px;
@@ -42,19 +58,18 @@ h2.about {
 nav {
     display: flex;
     flex-direction: column;
-    padding: 15px;
 }
 a {
     text-decoration: none;
     color: white;
 }
 img.profile-img {
-    width: 50%;
-    margin: 20px;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    margin-left: 250px;
-    border-radius: 10px;
+    float: right;
+    width: 11%;
+    margin: 1%;
+    margin-right: 4%;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 img.profile-img:hover {
     cursor: none;
@@ -89,28 +104,32 @@ img.profile-img:hover {
     color: rgba(4, 4, 116, 0.974);
     width: 100%;
 }
+
 .navbox-home {
+    justify-content: left;
     text-align: center;
-    padding: 50px;
-    margin: 60px;
-    height: 50px;
+    padding: 15px;
+    margin: 1%;
+    margin-top: 3%;
+    height: fit-content;
     font-size: 28px;
     border: 2px solid white;
     background-color: rgba(4, 4, 116, 0.974);
     border-radius: 10px;
-    width: 40%;
-    transition: background-color 0.2s;
-    transition: width ease-out 0.4s;
+    width: 20%;
+    transition: background-color 0.2s, width ease-out 0.4s;
+    color: white;
 }
 .navbox-home:hover {
     text-align: center;
-    padding: 50px;
-    margin: 60px;
-    height: 50px;
+    padding: 15px;
+    margin: 1%;
+    margin-top: 3%;
+    height: fit-content;
     border: 1px solid yellow;
     background-color: white;
     border-radius: 10px;
-    width: 50%;
+    width: 20%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
@@ -122,26 +141,30 @@ img.profile-img:hover {
     color: rgba(4, 4, 116, 0.974);
 }
 .navbox {
+    position: relative;
     text-align: center;
-    padding: 50px;
+    padding: 15px;
     font-size: 28px;
-    margin: 60px;
+    margin: 1%;
+    margin-top: 3%;
     height: 50px;
     border: 1px solid white;
     background-color: rgba(4, 4, 116, 0.974);
     border-radius: 10px;
-    width: 40%;
+    width: 20%;
+    color: white;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox:hover {
     text-align: center;
-    padding: 50px;
-    margin: 60px;
+    padding: 15px;
+    margin: 1%;
+    margin-top: 3%;
     height: 50px;
     border: 1px solid yellow;
     background-color: white;
     border-radius: 10px;
-    width: 50%;
+    width: 20%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
@@ -193,6 +216,23 @@ section.about {
     margin: auto;
     margin-bottom: 50px;
 }
+.slider-container {
+    margin: auto;
+    text-align: justify;
+}
+.slider-container img {
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.slider-container p {
+    margin-bottom: 3%;
+}
+.about-section {
+    background-color: rgba(255, 248, 220, 0.9);
+    width: 60%;
+    margin: auto;
+}
 footer {
     text-align: center;
     margin-top: 50px;
@@ -213,6 +253,14 @@ footer {
     text-align: center;
     padding: 50px;
 }
+.signature {
+    text-align: center;
+    margin-top: 2rem;
+}
+.feedback {
+    color: black;
+    background-color: cornsilk;
+}
 .feedback-box {
     margin: auto;
     width: 90%;
@@ -223,6 +271,7 @@ footer {
     line-height: 2;
     border-radius: 10px;
     overflow: hidden;
+    border: 2px solid black;
 }
 .submit-feedback {
     margin: auto;

@@ -10,7 +10,7 @@ export function FeedbackForm(){
     }
     const handleSubmit = async (e) => {
       e.preventDefault();
-
+      
       try {
         const response = await fetch("https://v1.nocodeapi.com/bealecs1/google_sheets/YMpDayPAoKSPhQlU?tabId=feedback", {
           method: 'POST',
@@ -28,6 +28,7 @@ export function FeedbackForm(){
         alert("There was an error processing your feedback, please try again.");
       }
     }
+  
    
     return (
         <form id="Feedback" className="feedback" autoComplete="off">
