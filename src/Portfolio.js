@@ -6,6 +6,7 @@ import { FeedbackForm } from "./Feedback";
 import { ProjectListing } from "./ProjectListing";
 import { Welcome } from "./Welcome";
 import SimpleSlider from "./Carousel";
+import ProjectSlider from "./ProjectsCarousel";
 
 
 export function Portfolio() {
@@ -39,7 +40,7 @@ export function Portfolio() {
       <Welcome />
       <div className="middle-div">
       <Navbar home={handleClick2} projects={handleClick}/>
-      {NavState ? <ProjectListing /> : <SimpleSlider />} 
+      {NavState ? <ProjectSlider /> : <SimpleSlider />} 
       </div>
       <Footer /> 
     </div>

@@ -2,7 +2,7 @@
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.container {
+.container{
     background-color: rgb(196, 186, 186);
     background-size: 60rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -32,6 +32,20 @@
 }
 .container3 {
     height: fit-content;
+}
+.proj {
+    text-align: center;
+    margin: 2%;
+}
+.proj button {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 50%;
+    transition: background-color ease-out 0.3s;
+}
+.proj button:hover {
+    background-color: rgb(127, 154, 245);
+    border: 1px solid yellow;
 }
 section.body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -98,7 +112,7 @@ img.profile-img:hover {
     transition: background-color ease-out 0.4s, width ease-out 0.4s;
 }
 .project-buttons:hover {
-    background-color: white;
+    background-color: rgb(127, 154, 245);
     border: 2px solid yellow;
     color: rgba(4, 4, 116, 0.974);
     width: 100%;
@@ -114,7 +128,7 @@ img.profile-img:hover {
     font-size: 28px;
     border: 2px solid white;
     background-color: rgba(4, 4, 116, 0.974);
-    border-radius: 50%;
+    border-radius: 30%;
     width: 100%;
     transition: background-color 0.2s, width ease-out 0.4s;
     color: white;
@@ -126,8 +140,8 @@ img.profile-img:hover {
     margin-top: 3%;
     height: fit-content;
     border: 1px solid yellow;
-    background-color: white;
-    border-radius: 50%;
+    background-color: rgb(127, 154, 245);
+    border-radius: 30%;
     width: 100%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
@@ -149,7 +163,7 @@ img.profile-img:hover {
     height: 50px;
     border: 1px solid white;
     background-color: rgba(4, 4, 116, 0.974);
-    border-radius: 50%;
+    border-radius: 30%;
     width: 100%;
     color: white;
     transition: background-color 0.2s, width ease-out 0.4s;
@@ -161,8 +175,8 @@ img.profile-img:hover {
     margin-top: 3%;
     height: 50px;
     border: 1px solid yellow;
-    background-color: white;
-    border-radius: 50%;
+    background-color: rgb(127, 154, 245);
+    border-radius: 30%;
     width: 100%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
@@ -256,6 +270,9 @@ section.about {
 }
 .slick-dots li.slick-inactive button {
     color:yellow !important;
+}
+.proj p {
+    margin-top: 2%;
 }
 footer {
     text-align: center;
