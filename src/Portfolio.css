@@ -292,7 +292,8 @@ footer {
     transition: background-color ease-out 0.3s;
 }
 .submit-feedback:hover {
-    background-color: rgba(4, 4, 116, 0.974);
+    border: 2px solid yellow;
+    background-color: rgb(127, 154, 245);
     color: white;
 }
 
