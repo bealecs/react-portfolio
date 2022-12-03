@@ -15,6 +15,9 @@ export default class ProjectSlider extends Component {
     const ball = require("./8ball.png");
     const food = "https://clipartix.com/wp-content/uploads/2018/03/burger-clipart-2018-15.png";
     const xo = require("./xo.png");
+    const calcUrl = 'https://bealecs.github.io/portfolio/Game%20Projects/calculator.html';
+    const ballUrl = 'https://bealecs.github.io/portfolio/Game%20Projects/8Ball.html';
+    const xoUrl = 'https://bealecs.github.io/portfolio/Game%20Projects/xo.html';
 
     return (
       <div className="about-section">
@@ -26,13 +29,13 @@ export default class ProjectSlider extends Component {
             <h2>Calculator</h2>
             <p>This is a simple calculator using HTML, CSS for styling, and JavaScript for the functionality. 
                 Features A/C button, DEL button, multiplication + addition + subtraction + division operators</p>
-            <button>Go</button>
+            <a href={calcUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
           </div>
           <div className="proj">
             <img src={ball} alt="a magic 8-ball" style={{ width: 300, height: 300 }} />
             <h2>Magic 8 Ball</h2>
             <p>Just like the old magic 8 ball that you remember, equipped with 9 random responses for all of your best questions: ask away!</p>
-            <button>Go</button>
+            <a href={ballUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
           </div>
           <div className="proj">
             <img src={food} alt="a hamburger" style={{ width: 300, height: 300 }} />
@@ -48,7 +51,7 @@ export default class ProjectSlider extends Component {
             <p>A childhood favorite, and a good task for a learner like myself. This project was my first to complete, and surprisingly enough uses very little JavaScript.
                 Mostly, it is just changes in CSS styling using a little bit of JavaScript for placing tokens.
             </p>
-            <button>Go</button>
+            <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
           </div>
         </Slider>
       </div>
