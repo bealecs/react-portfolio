@@ -29,13 +29,13 @@ export default class ProjectSlider extends Component {
             <button>Go</button>
           </div>
           <div className="proj">
-            <img src={ball} style={{ width: 300, height: 300 }} />
+            <img src={ball} alt="a magic 8-ball" style={{ width: 300, height: 300 }} />
             <h2>Magic 8 Ball</h2>
             <p>Just like the old magic 8 ball that you remember, equipped with 9 random responses for all of your best questions: ask away!</p>
             <button>Go</button>
           </div>
           <div className="proj">
-            <img src={food} style={{ width: 300, height: 300 }} />
+            <img src={food} alt="a hamburger" style={{ width: 300, height: 300 }} />
             <h2>Random Meal Suggestor</h2>
             <p>I created this using TheMealDB API to pick a randomly suggested meal from their database. My wife and I are always indecisive about what we want to eat. This way, we don't have to be; 
                 we can just click a button and have a suggestion at our fingertips. Don't like the suggestion? Just roll it again!
@@ -43,7 +43,7 @@ export default class ProjectSlider extends Component {
             <button>Go</button>
           </div>
           <div className="proj">
-            <img src={xo} style={{ width: 300, height: 300 }} />
+            <img src={xo} alt="a tic-tac-toe board almost complete" style={{ width: 300, height: 300 }} />
             <h2>Tic-Tac-Toe</h2>
             <p>A childhood favorite, and a good task for a learner like myself. This project was my first to complete, and surprisingly enough uses very little JavaScript.
                 Mostly, it is just changes in CSS styling using a little bit of JavaScript for placing tokens.

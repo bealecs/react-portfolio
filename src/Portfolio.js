@@ -2,8 +2,6 @@ import React from "react";
 import './Portfolio.css';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
-import { FeedbackForm } from "./Feedback";
-import { ProjectListing } from "./ProjectListing";
 import { Welcome } from "./Welcome";
 import SimpleSlider from "./Carousel";
 import ProjectSlider from "./ProjectsCarousel";
