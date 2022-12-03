@@ -114,7 +114,7 @@ img.profile-img:hover {
     font-size: 28px;
     border: 2px solid white;
     background-color: rgba(4, 4, 116, 0.974);
-    border-radius: 10px;
+    border-radius: 50%;
     width: 100%;
     transition: background-color 0.2s, width ease-out 0.4s;
     color: white;
@@ -127,7 +127,7 @@ img.profile-img:hover {
     height: fit-content;
     border: 1px solid yellow;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 100%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
@@ -149,7 +149,7 @@ img.profile-img:hover {
     height: 50px;
     border: 1px solid white;
     background-color: rgba(4, 4, 116, 0.974);
-    border-radius: 10px;
+    border-radius: 50%;
     width: 100%;
     color: white;
     transition: background-color 0.2s, width ease-out 0.4s;
@@ -162,7 +162,7 @@ img.profile-img:hover {
     height: 50px;
     border: 1px solid yellow;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 100%;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
@@ -184,7 +184,7 @@ section.about {
 }
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-left: 1%;
 }
 .image-cards p {
@@ -230,11 +230,10 @@ section.about {
     margin-top: 3%;
     margin-bottom: 5%;
 }
-.slider-container p {
-    margin-bottom: 3%;
-}
+
 .about-section {
-    background-color: rgba(255, 248, 220, 1);
+    background-color: rgba(4, 4, 116, 0.974);
+    color: white;
     border: 8px solid white;
     width: 60%;
     margin: auto;
@@ -242,6 +241,10 @@ section.about {
 .about-section h2 {
     text-align: center;
     color: dark;
+}
+.about-section p {
+    text-align: left;
+    margin: 0;
 }
 .middle-div {
     display: flex;
@@ -257,38 +260,34 @@ section.about {
 footer {
     text-align: center;
     margin-top: 50px;
-    padding-top: 25px;
+    padding-top: 5px;
     color: white;
-    background-color: rgba(4, 4, 116, 0.974);
+    
 }
 .footer-icons {
     display: flex;
-    margin: 50px;
+    margin: 20px;
     margin-bottom: 0;
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 .feedback {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px;
-}
-.signature {
-    text-align: center;
-    margin-top: 2rem;
+    padding: 20px;
 }
 .feedback {
-    color: black;
-    background-color: cornsilk;
+    color: white;
+    
 }
 .feedback-box {
     margin: auto;
     width: 90%;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     line-height: 2;
     border-radius: 10px;
     overflow: hidden;
@@ -306,128 +305,3 @@ footer {
     color: white;
 }
 
-@media only screen and (max-width: 700px) {
-    
-    section.body {
-        width: 100%;
-    }
-    .container2 {
-        height: 500px;
-    }
-    .navbox {
-        padding: 10px;
-        font-size: 16px;
-        margin: 20px;
-        margin-left: auto;
-        width: 50%;
-        
-    }
-    .navbox-home {
-        padding: 10px;
-        font-size: 16px;
-        margin: 20px;
-        margin-left: auto;
-        width: 50%;
-    }
-    .navbox:hover {
-        padding: 10px;
-        margin: 20px;
-        margin-left: auto;
-        width: 50%;
-    }
-    .navbox-home:hover {
-        padding: 10px;
-        margin: 20px;
-        margin-left: auto;
-        width: 50%;
-    }
-    .project-buttons {
-        width: 70%;
-    }
-    .project-buttons:hover {
-        width: 70%;
-    }
-    .profile-img {
-        position: relative;
-        bottom: 50px;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .project-buttons {
-        padding: 5px;
-        margin: 10px;
-        position: relative;
-        top: 115px;
-        width: 100%;
-        font-size: 12px;
-    }
-    .project-buttons:hover {
-        width: 100%;
-    }
-    .navbox {
-        position: relative;
-        
-    }
-    .navbox-home {
-        position: relative;
-        
-    }
-    .image-cards p {
-        margin: 0;
-    }
-}
-@media only screen and (max-width: 485px) {
-    section img {
-        display: none;
-    }
-    .profile-img {
-        height: 35%;
-        position: relative;
-    }
-    section p {
-        padding: 0;
-        text-align: justify;
-    }
-    .continued {
-        text-align: justify;
-        margin: 10px;
-        padding: 5px;
-    }
-    .feedback-box {
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 300px) {
-    .profile-img {
-        display: none;
-    }
-    .project-buttons {
-        padding: 5px 25px;
-        font-size: 10px;
-        width: 150%;
-    }
-    .project-buttons:hover {
-        width: 150%;
-    }
-    .navbox-home {
-        display: none;
-    }
-    .project-buttons {
-        position: relative;
-    }
-}
-@media only screen and (max-width: 1000px) {
-
-    .navbox:hover {
-        width: 40%;
-    }
-    .navbox-home:hover {
-        width: 40%;
-    }
-    .container3 {
-        position: relative;
-        right: 200px;
-        top: 200px;
-        
-    }
-}

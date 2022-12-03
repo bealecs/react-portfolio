@@ -3,7 +3,6 @@ import './Portfolio.css';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
 import { FeedbackForm } from "./Feedback";
-import { ProfileImage } from "./ProfileImage";
 import { ProjectListing } from "./ProjectListing";
 import { Welcome } from "./Welcome";
 import SimpleSlider from "./Carousel";
@@ -43,7 +42,6 @@ export function Portfolio() {
       {NavState ? <ProjectListing /> : <SimpleSlider />} 
       </div>
       <Footer /> 
-      <FeedbackForm />
     </div>
   )
 }

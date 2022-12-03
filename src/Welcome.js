@@ -1,6 +1,6 @@
 import React from "react";
 import { ProfileImage } from "./ProfileImage";
-import SimpleSlider from "./Carousel";
+
 
 export function Welcome() {
     return (
