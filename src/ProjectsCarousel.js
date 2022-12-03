@@ -34,7 +34,7 @@ export default class ProjectSlider extends Component {
           <div className="proj">
             <img src={ball} alt="a magic 8-ball" style={{ width: 300, height: 300 }} />
             <h2>Magic 8 Ball</h2>
-            <p>Just like the old magic 8 ball that you remember, equipped with 9 random responses for all of your best questions: ask away!</p>
+            <p>Just like the old magic 8 ball that you remember, equipped with 9 random responses for all of your best questions: ask away! This project was created using HTML/CSS/JavaScript</p>
             <a href={ballUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
           </div>
           <div className="proj">

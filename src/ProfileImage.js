@@ -7,7 +7,7 @@ export function ProfileImage() {
 
     return (
         <div className="container3">
-            <img src={logo} alt='profile-img' className='profile-img' />
+            <img src={logo} alt='profile-img' className='profile-img' style={{width: 200, height: 200}}/>
         </div>
     );
 }
