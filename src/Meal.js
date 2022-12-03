@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import './Meal.css';
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php';
 
@@ -36,7 +37,7 @@ export const Meal = () => {
                         <h2>{strMeal}</h2>
                         <div className="underline"></div>
                         <img src={strMealThumb} alt={strMeal} />
-                        <h3>How to Cook</h3>
+                        <h3 className='howto'>How to Cook</h3>
                         <div className='underline2'></div>
                         <p>{strInstructions}</p>
                         <h4 className='ingredients'>Ingredients:</h4>

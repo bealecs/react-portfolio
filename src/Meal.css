@@ -1,0 +1,42 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .title1 {
+    padding: 1%;
+    margin-right: 7%;
+  }
+  
+  .meals p {
+    line-height: 2;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .one li {
+    padding: 2%;
+  }
+  .button button {
+    border-radius: 20px;
+    margin: auto;
+    width: 250px;
+    transition: background-color linear 0.4s;
+  
+  }
+  .home-nav {
+    float: left;
+  }
+  h3.howto {
+    margin-bottom: 2%;
+  }
+  h4.ingredients {
+    margin-top: 2%;
+    text-align: center;
+    
+  }
+  .ingredients-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  :root {
+    background-color: beige;
+  }

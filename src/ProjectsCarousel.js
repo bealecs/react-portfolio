@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 export default class ProjectSlider extends Component {
   render() {
@@ -43,7 +44,7 @@ export default class ProjectSlider extends Component {
             <p>I created this using TheMealDB API to pick a randomly suggested meal from their database. My wife and I are always indecisive about what we want to eat. This way, we don't have to be; 
                 we can just click a button and have a suggestion at our fingertips. Don't like the suggestion? Just roll it again!
             </p>
-            <button>Go</button>
+            <Link to="/meal"><button>Go</button></Link>
           </div>
           <div className="proj">
             <img src={xo} alt="a tic-tac-toe board almost complete" style={{ width: 300, height: 300 }} />
