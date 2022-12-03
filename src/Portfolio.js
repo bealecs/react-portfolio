@@ -5,6 +5,7 @@ import {Footer} from './Footer';
 import { Welcome } from "./Welcome";
 import SimpleSlider from "./Carousel";
 import ProjectSlider from "./ProjectsCarousel";
+import { ProfileImage } from "./ProfileImage";
 
 
 export function Portfolio() {
@@ -35,11 +36,12 @@ export function Portfolio() {
 
   return (
     <div className="container">
-      <Welcome />
-      <div className="middle-div">
-      <Navbar home={handleClick2} projects={handleClick}/>
-      {NavState ? <ProjectSlider /> : <SimpleSlider />} 
+      <div className="header-container">
+        <Welcome />
+        <Navbar home={handleClick2} projects={handleClick}/>
+        <ProfileImage />
       </div>
+      {NavState ? <ProjectSlider /> : <SimpleSlider />} 
       <Footer /> 
     </div>
   )

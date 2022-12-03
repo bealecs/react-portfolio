@@ -9,6 +9,10 @@
     background-image: url("./background.gif");
     
 }
+.header-container {
+    display: inline-flex;
+    justify-content: space-between;
+}
 .about-container {
     display: flex;
     justify-content: center;
@@ -70,7 +74,9 @@ h2.about {
 }
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-evenly;
 }
 a {
     text-decoration: none;
@@ -119,30 +125,24 @@ img.profile-img:hover {
 }
 
 .navbox-home {
-    justify-content: left;
     text-align: center;
     padding: 15px;
-    margin: 1%;
-    margin-top: 3%;
-    height: fit-content;
+    margin: 5%;
     font-size: 28px;
     border: 2px solid white;
     background-color: rgba(4, 4, 116, 0.974);
-    border-radius: 30%;
-    width: 100%;
-    transition: background-color 0.2s, width ease-out 0.4s;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.2s;
     color: white;
 }
 .navbox-home:hover {
     text-align: center;
     padding: 15px;
-    margin: 1%;
-    margin-top: 3%;
-    height: fit-content;
-    border: 1px solid yellow;
+    margin: 5%;
+    border: 2px solid yellow;
     background-color: rgb(127, 154, 245);
-    border-radius: 30%;
-    width: 100%;
+    width: fit-content;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
@@ -158,26 +158,21 @@ img.profile-img:hover {
     text-align: center;
     padding: 15px;
     font-size: 28px;
-    margin: 1%;
-    margin-top: 3%;
-    height: 50px;
-    border: 1px solid white;
+    margin: 5%;
+    border: 2px solid white;
     background-color: rgba(4, 4, 116, 0.974);
-    border-radius: 30%;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
     color: white;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox:hover {
     text-align: center;
     padding: 15px;
-    margin: 1%;
-    margin-top: 3%;
-    height: 50px;
-    border: 1px solid yellow;
+    margin: 5%;
+    border: 2px solid yellow;
     background-color: rgb(127, 154, 245);
-    border-radius: 30%;
-    width: 100%;
+    width: fit-content;
     color: rgba(4, 4, 116, 0.974);
     cursor: pointer;
 }
@@ -198,36 +193,14 @@ section.about {
 }
 .navbar {
     display: flex;
-    justify-content: space-around;
-    margin-left: 1%;
+    justify-content: center;
 }
 .image-cards p {
     height: auto;
     margin: 50px;
     text-align: justify;
 }
-.coding {
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    border-top: 15px solid white;
-}
-.jet {
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-    border-top: 5px solid white;
-}
-.home-pic {
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-}
-.dream {
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-}
+
 .underline-section {
     height: 5px;
     width: 100px;
@@ -249,7 +222,7 @@ section.about {
     background-color: rgba(4, 4, 116, 0.974);
     color: white;
     border: 8px solid white;
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 .about-section h2 {
@@ -297,14 +270,14 @@ footer {
 }
 .feedback {
     color: white;
-    
+    margin-top: 15%;
 }
 .feedback-box {
     margin: auto;
     width: 90%;
     text-align: center;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 5%;
     margin-bottom: 10px;
     line-height: 2;
     border-radius: 10px;
@@ -316,6 +289,7 @@ footer {
     width: 200px;
     border-radius: 10px;
     height: 75px;
+    margin-top: 5%;
     transition: background-color ease-out 0.3s;
 }
 .submit-feedback:hover {

@@ -1,5 +1,4 @@
 import React from "react";
-import { ProfileImage } from "./ProfileImage";
 
 
 export function Welcome() {
@@ -10,7 +9,6 @@ export function Welcome() {
                 <h1 className="name">Clifton Beale</h1>
                 <h3 className="goal">Aspiring Front-End Web Developer</h3>
             </section>
-            <ProfileImage />
             </div>
          </div>
     );

@@ -6,7 +6,7 @@ export function Navbar(props) {
 
     return (
         <nav className="navbar">
-          <div className="navbox-home" onClick={props.home}>Home
+          <div className="navbox-home" onClick={props.home}>About
             <Link to="/" className="nav-item"></Link> 
           </div>
 
