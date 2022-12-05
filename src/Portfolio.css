@@ -4,10 +4,9 @@
 }
 .container{
     background-color: rgb(196, 186, 186);
-    background-size: 40rem;
+    background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("./background.gif");
-    
 }
 .header-container {
     display: inline-flex;
@@ -37,12 +36,27 @@
     height: fit-content;
     width: 33%;
 }
-.proj {
+
+.proj-inline {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+    float: left;
+}
+.proj-inline2 {
+    margin: auto;
+    flex-direction: column;
     text-align: center;
-    
+    margin-top: 10%;
+    width: 50%;
+    float: right;
 }
 .proj button {
-    padding: 1%;
+    padding: 2%;
+    font-size: 1.4rem;
     margin: 1%;
     border-radius: 50%;
     transition: background-color ease-out 0.3s;
@@ -215,7 +229,6 @@ section.about {
 .flexington {
     padding-top: 5%;
 }
-
 .about-section {
     background-color: rgba(4, 4, 116, 0.974);
     color: white;
@@ -239,13 +252,9 @@ section.about {
 .slick-dots li.slick-active button:before {
     color:White !important;
 }
-.slick-dots li.slick-inactive button {
-    color:yellow !important;
+.slick-dots li button:before {
+    color:White !important;
 }
-.proj p {
-    margin-top: 2%;
-}
-
 footer {
     text-align: center;
     margin-top: 50px;
@@ -296,7 +305,11 @@ footer {
     background-color: rgb(127, 154, 245);
     color: white;
 }
-
+@media only screen and (max-width: 1000px) {
+    .flexing {
+        display: block;
+    }
+}
 @media only screen and (max-width: 500px) {
     .profile-img {
         width: 50px;
@@ -315,5 +328,43 @@ footer {
     }
     .flexing {
         display: block;
+    }
+    .about-section {
+        width: 90%;
+        border: 5px solid white;
+    }
+    #root {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .proj img {
+        display: block;
+        padding: 0;
+        margin: auto;
+    }
+    .proj-inline {
+        width: fit-content;
+        justify-content: center;
+        text-align: center;
+        margin: 10%;
+        padding: 0;
+    }
+    .proj-inline2 {
+        width: fit-content;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .proj-inline {
+        display: block;
+        width: fit-content;
+        margin: 1%;
+        padding: 0;
+    }
+    .about-section {
+        width: 100%;
     }
 }
