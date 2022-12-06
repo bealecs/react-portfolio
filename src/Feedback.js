@@ -31,10 +31,10 @@ export function FeedbackForm(){
   
    
     return (
-        <form id="Feedback" className="feedback" autoComplete="off">
+        <form onSubmit={handleSubmit} id="Feedback" className="feedback" autoComplete="off">
         <label>If you took time to check out my portfolio today, feel free to leave me a comment with some feedback. Any feedback is greatly appreciated!</label>
-          <input onChange={handleChange} name="feedback" type="text" value={feedback} className="feedback-box" placeholder="Please type your feedback here"/>
-          <button onClick={handleSubmit} className="submit-feedback" value="Submit">Submit</button>
+          <input onChange={handleChange} name="feedback" type="text" value={feedback} className="feedback-box" placeholder="Please type your feedback here" required/>
+          <button type="submit" className="submit-feedback" value="Submit">Submit</button>
       </form>
     );
 }
