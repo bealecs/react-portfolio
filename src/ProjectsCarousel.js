@@ -65,7 +65,7 @@ export default class ProjectSlider extends Component {
             </div>
             <div className="proj-inline2">
               <p>A childhood favorite, and a good task for a learner like myself. This project was my first to complete, and surprisingly enough uses very little JavaScript.
-                Mostly, it is just changes in CSS styling using a little bit of JavaScript for placing tokens.
+                Mostly, it is just changes in CSS styling using a little bit of JavaScript for event listeners.
               </p>
               <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
             </div>

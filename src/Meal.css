@@ -2,8 +2,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .title1 {
-    padding: 1%;
-    margin-right: 7%;
+    margin: 1%;
   }
   
   .meals p {
@@ -16,10 +15,11 @@
   }
   .button button {
     border-radius: 20px;
-    margin: auto;
+    margin: 1%;
     width: 250px;
+    padding: 2%;
+    background-color: beige;
     transition: background-color linear 0.4s;
-  
   }
   .home-nav {
     float: left;
@@ -39,4 +39,19 @@
   }
   :root {
     background-color: beige;
+  }
+  .home-return-box {
+    margin: auto;
+    padding: 2%;
+
+  }
+  @media only screen and (max-width: 500px) {
+    .meals p {
+      padding: 0;
+      margin: 0;
+    }
+    .meal-container {
+      padding: 0;
+      margin: 0;
+    }
   }

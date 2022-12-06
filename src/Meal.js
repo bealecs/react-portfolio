@@ -20,13 +20,6 @@ export const Meal = () => {
 
     return (
         <div className='meal-container'>
-        <div className='home-return-box'>
-        <Link to="/" className='home-nav'>Back to Home</Link>
-        </div>
-        <h1 className='title1'>Meal Suggestion Generator</h1>
-        <div className='button'>
-        <button onClick={() => fetchFood()} className="btn">Get A Meal</button>
-        </div>
         <section className="meals">
             {food.map((f) => {
                 const {idMeal, strMeal, strInstructions, strMealThumb, strIngredient1, strIngredient2, strIngredient3, strIngredient4,
@@ -34,6 +27,13 @@ export const Meal = () => {
                         strIngredient12, strIngredient13, strIngredient14, strIngredient15, strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20} = f;
                 return (
                     <article key={idMeal}>
+                        <h1 className='title1'>Meal Suggestion Generator</h1>
+                        <div className='button'>
+                            <button onClick={() => fetchFood()} className="btn">Get A Meal</button>
+                        </div>
+                        <div className='home-return-box'>
+                            <Link to="/" className='home-nav'>Back to Home</Link>
+                        </div>
                         <h2>{strMeal}</h2>
                         <div className="underline"></div>
                         <img src={strMealThumb} alt={strMeal} />
