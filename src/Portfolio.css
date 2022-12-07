@@ -292,6 +292,9 @@ footer {
     overflow: hidden;
     border: 2px solid black;
 }
+.feedback-box:focus:invalid {
+    border: 2px solid red;
+}
 .submit-feedback {
     margin: auto;
     width: 200px;
