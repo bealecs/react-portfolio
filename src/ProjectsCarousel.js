@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { FeedbackForm } from "./Feedback";
 
 export default class ProjectSlider extends Component {
   render() {
@@ -69,6 +70,9 @@ export default class ProjectSlider extends Component {
               </p>
               <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
             </div>
+          </div>
+          <div>
+            <FeedbackForm />
           </div>
         </Slider>
       </div>

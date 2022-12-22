@@ -6,7 +6,7 @@
     background-color: rgb(196, 186, 186);
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("./background.gif");
+    background-color: black;
 }
 .header-container {
     display: inline-flex;
@@ -22,7 +22,9 @@
     width: 20%;
     margin: 2% 1%;
 }
-
+.welcome-container {
+    text-shadow: 2px 2px grey;
+}
 .welcome-container h2 {
     color: white;
     text-align: center;
@@ -38,12 +40,12 @@
 }
 
 .proj-inline {
-    display: inline-flex;
-    justify-content: center;
     flex-direction: column;
+    margin: auto;
     margin-bottom: 2%;
     padding-bottom: 2%;
     width: 50%;
+    height: 100%;
     float: left;
 }
 .proj-inline2 {
@@ -52,18 +54,24 @@
     text-align: center;
     margin-top: 10%;
     width: 50%;
+    height: 100%;
     float: right;
 }
 .proj button {
     padding: 2%;
     font-size: 1.4rem;
     margin: 1%;
+    margin-top: 3%;
     border-radius: 50%;
     transition: background-color ease-out 0.3s;
+    background-color: black;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    color: white;
 }
 .proj button:hover {
-    background-color: rgb(127, 154, 245);
-    border: 1px solid yellow;
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    background-color: black;
+    color: white;
 }
 section.body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -101,7 +109,7 @@ img.profile-img {
     float: right;
     margin: 1%;
     border-radius: 50%;
-    border: 2px solid white;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
 }
 img.profile-img:hover {
     cursor: none;
@@ -145,8 +153,8 @@ img.profile-img:hover {
     font-size: 28px;
     margin: 2%;
     margin-left: 30%;
-    border: 2px solid white;
-    background-color: rgba(4, 4, 116, 0.974);
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    background-color: black;
     height: fit-content;
     width: fit-content;
     color: white;
@@ -161,19 +169,19 @@ img.profile-img:hover {
     padding: 2%;
     margin: 2%;
     margin-left: 30%;
-    border: 2px solid yellow;
-    background-color: rgb(127, 154, 245);
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    background-color: black;
     width: fit-content;
     border-radius: 10%;
-    color: rgba(4, 4, 116, 0.974);
+    color: beige;
     cursor: pointer;
 }
 .navbox-home {
     padding: 2%;
     font-size: 28px;
     margin: 2%;
-    border: 2px solid white;
-    background-color: rgba(4, 4, 116, 0.974);
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    background-color: black;
     height: fit-content;
     width: fit-content;
     color: white;
@@ -183,11 +191,11 @@ img.profile-img:hover {
 .navbox-home:hover {
     padding: 2%;
     margin: 2%;
-    border: 2px solid yellow;
-    background-color: rgb(127, 154, 245);
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    background-color: black;
     width: fit-content;
     border-radius: 10%;
-    color: rgba(4, 4, 116, 0.974);
+    color: beige;
     cursor: pointer;
 }
 section.about {
@@ -222,6 +230,9 @@ section.about {
     margin: auto;
     text-align: justify;
 }
+.slider-container h2 {
+    padding-top: 15px;
+}
 .slider-container img {
     width: fit-content;
     padding: 5%;
@@ -230,10 +241,10 @@ section.about {
     padding-top: 5%;
 }
 .about-section {
-    background-color: rgba(4, 4, 116, 0.974);
+    background-color: black;
     color: white;
-    border: 8px solid white;
-    width: 80%;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
+    width: 70%;
     margin: auto;
 }
 .about-section h2 {
@@ -257,7 +268,7 @@ section.about {
 }
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 55px;
     padding-top: 5px;
     color: white;
     
@@ -268,7 +279,14 @@ footer {
     margin-bottom: 0;
     justify-content: space-evenly;
     padding-bottom: 30px;
-    
+}
+.footer-icons > .social-icon {
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 3px 29px 0px;
+    border-radius: 50%;
+}
+.footer-icons > .social-icon:hover {
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 3px 29px 0px;
+    border-radius: 50%;
 }
 .feedback {
     display: flex;

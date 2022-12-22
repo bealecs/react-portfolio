@@ -16,7 +16,7 @@ export const Meal = () => {
     }
     useEffect(() => {
         fetchFood();
-    }, []);
+    }, [Meal]);
 
     return (
         <div className='meal-container'>
