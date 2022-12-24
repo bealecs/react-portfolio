@@ -2,11 +2,16 @@
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.container{
-    background-color: rgb(196, 186, 186);
+.container-dark{
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
+}
+.container-light{
+    background-size: contain;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: black;
 }
 .header-container {
     display: inline-flex;
@@ -148,6 +153,20 @@ img.profile-img:hover {
     width: 100%;
 }
 
+.navbox-theme {
+    padding: 2%;
+    font-size: 28px;
+    margin: 2%;
+    margin-left: 30%;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    background-color: black;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    border-radius: 10%;
+    transition: background-color 0.2s, width ease-out 0.4s;
+}
+
 .navbox {
     padding: 2%;
     font-size: 28px;
@@ -176,7 +195,7 @@ img.profile-img:hover {
     color: beige;
     cursor: pointer;
 }
-.navbox-home {
+.navbox-home{
     padding: 2%;
     font-size: 28px;
     margin: 2%;
@@ -240,18 +259,43 @@ section.about {
 .flexington {
     padding-top: 5%;
 }
-.about-section {
+.themer {
+    border-radius: 30%;
+    padding: 1%;
+    transition: border ease-in 0.2ms;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
+}
+.themer:hover {
+    border: 2px solid white;
+}
+.about-section-dark {
     background-color: black;
     color: white;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
     width: 75%;
     margin: auto;
 }
-.about-section h2 {
-    text-align: center;
-    color: dark;
+.about-section-light {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
+    width: 75%;
+    margin: auto;
 }
-.about-section p {
+.about-section-dark h2 {
+    text-align: center;
+    color: white;
+}
+.about-section-light h2 {
+    text-align: center;
+    color: black;
+}
+.about-section-dark p {
+    text-align: left;
+    margin: 0;
+    color: white;
+}
+.about-section-light p {
     text-align: left;
     margin: 0;
 }
@@ -350,9 +394,13 @@ footer {
     .flexing {
         display: block;
     }
-    .about-section {
+    .about-section-dark {
         width: 90%;
         border: 5px solid white;
+    }
+    .about-section-light {
+        width: 90%;
+        border: 5px solid black;
     }
     #root {
         margin-right: 0;
@@ -385,7 +433,10 @@ footer {
         margin: 1%;
         padding: 0;
     }
-    .about-section {
+    .about-section-dark {
+        width: 100%;
+    }
+    .about-section-light {
         width: 100%;
     }
 }

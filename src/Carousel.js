@@ -20,7 +20,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="about-section">
+      <div className={this.props.className}>
         <div className="slider-container">
         <h2> Get to know me</h2>
         <Slider {...settings}>

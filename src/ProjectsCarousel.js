@@ -12,7 +12,7 @@ export default class ProjectSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1
     };
-
+    
     const calculator = "https://clipartix.com/wp-content/uploads/2018/03/easy-clipart-2018-4.png";
     const ball = require("./8ball.png");
     const food = "https://clipartix.com/wp-content/uploads/2018/03/burger-clipart-2018-15.png";
@@ -22,7 +22,7 @@ export default class ProjectSlider extends Component {
     const xoUrl = 'https://bealecs.github.io/portfolio/Game%20Projects/xo.html';
 
     return (
-      <div className="about-section">
+      <div className={this.props.className}>
         <div className="slider-container">
         <h2> My Projects</h2>
         <Slider {...settings}>
