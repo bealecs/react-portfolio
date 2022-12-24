@@ -34,7 +34,7 @@ export default class ProjectSlider extends Component {
             <div className="proj-inline2">
               <p>This is a simple calculator using HTML, CSS for styling, and JavaScript for the functionality. 
                 Features A/C button, DEL button, multiplication + addition + subtraction + division operators</p>
-              <a href={calcUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
+              <a href={calcUrl} target="_blank" rel="noopener noreferrer"><button className={this.props.className2}>Go</button></a>
             </div>
           </div>
           <div className="proj">
@@ -44,7 +44,7 @@ export default class ProjectSlider extends Component {
             </div>
             <div className="proj-inline2">
               <p>Just like the old magic 8 ball that you remember, equipped with 9 random responses for all of your best questions: ask away! This project was created using HTML/CSS/JavaScript</p>
-              <a href={ballUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
+              <a href={ballUrl} target="_blank" rel="noopener noreferrer"><button className={this.props.className2}>Go</button></a>
             </div>
           </div>
           <div className="proj">
@@ -56,7 +56,7 @@ export default class ProjectSlider extends Component {
               <p>I created this using TheMealDB API to pick a randomly suggested meal from their database. My wife and I are always indecisive about what we want to eat. This way, we don't have to be; 
                 we can just click a button and have a suggestion at our fingertips. Don't like the suggestion? Just roll it again!
               </p>
-              <Link to="/meal"><button>Go</button></Link>
+              <Link to="/meal"><button className={this.props.className2}>Go</button></Link>
             </div>
           </div>
           <div className="proj">
@@ -68,11 +68,11 @@ export default class ProjectSlider extends Component {
               <p>A childhood favorite, and a good task for a learner like myself. This project was my first to complete, and surprisingly enough uses very little JavaScript.
                 Mostly, it is just changes in CSS styling using a little bit of JavaScript for event listeners.
               </p>
-              <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button>Go</button></a>
+              <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button className={this.props.className2}>Go</button></a>
             </div>
           </div>
           <div>
-            <FeedbackForm />
+            <FeedbackForm/>
           </div>
         </Slider>
       </div>

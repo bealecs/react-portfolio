@@ -27,17 +27,22 @@
     width: 20%;
     margin: 2% 1%;
 }
-.welcome-container {
+.welcome-container-dark {
+    text-shadow: 2px 2px grey;
+    color: white;
+}
+.welcome-container-light {
+    color: black;
     text-shadow: 2px 2px grey;
 }
 .welcome-container h2 {
-    color: white;
+    
     text-align: center;
     width: 33%;
 }
 .container2 {
     display: inline-flex;
-    color: white;
+    
 }
 .container3 {
     height: fit-content;
@@ -62,7 +67,7 @@
     height: 100%;
     float: right;
 }
-.proj button {
+.proj button.theme-dark {
     padding: 2%;
     font-size: 1.4rem;
     margin: 1%;
@@ -73,10 +78,27 @@
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
     color: white;
 }
-.proj button:hover {
+.proj button.theme-dark:hover {
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
     background-color: black;
     color: white;
+}
+.proj button.theme-light {
+    padding: 2%;
+    font-size: 1.4rem;
+    margin: 1%;
+    margin-top: 3%;
+    border-radius: 50%;
+    border: none;
+    transition: background-color ease-out 0.3s;
+    background-color: white;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    color: black;
+}
+.proj button.theme-light:hover {
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    background-color: white;
+    color: black;
 }
 section.body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -90,11 +112,18 @@ h1.name {
     padding: 15px;
     font-size: 50px;
 }
-h3.goal {
+h3.goal-dark {
     padding: 15px;
     margin-top: 10px;
     font-size: 22px;
     border-left: 2px solid white;
+}
+h3.goal-light {
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 1%;
+    font-size: 22px;
+    border-left: 4px solid black;
 }
 h2.about {
     margin-top: 25px;
@@ -115,6 +144,7 @@ img.profile-img {
     margin: 1%;
     border-radius: 50%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    position: relative;
 }
 img.profile-img:hover {
     cursor: none;
@@ -153,7 +183,7 @@ img.profile-img:hover {
     width: 100%;
 }
 
-.navbox-theme {
+.navbox-dark {
     padding: 2%;
     font-size: 28px;
     margin: 2%;
@@ -162,20 +192,7 @@ img.profile-img:hover {
     background-color: black;
     height: fit-content;
     width: fit-content;
-    color: white;
-    border-radius: 10%;
-    transition: background-color 0.2s, width ease-out 0.4s;
-}
-
-.navbox {
-    padding: 2%;
-    font-size: 28px;
-    margin: 2%;
-    margin-left: 30%;
-    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
-    background-color: black;
-    height: fit-content;
-    width: fit-content;
+    position: relative;
     color: white;
     border-radius: 10%;
     transition: background-color 0.2s, width ease-out 0.4s;
@@ -195,7 +212,7 @@ img.profile-img:hover {
     color: beige;
     cursor: pointer;
 }
-.navbox-home{
+.navbox-home-dark{
     padding: 2%;
     font-size: 28px;
     margin: 2%;
@@ -205,6 +222,7 @@ img.profile-img:hover {
     width: fit-content;
     color: white;
     border-radius: 10%;
+    position: relative;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-home:hover {
@@ -216,6 +234,60 @@ img.profile-img:hover {
     border-radius: 10%;
     color: beige;
     cursor: pointer;
+}
+.navbox-home-light{
+    padding: 2%;
+    font-size: 28px;
+    margin: 2%;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    border-radius: 10%;
+    position: relative;
+    transition: background-color 0.2s, width ease-out 0.4s;
+}
+.navbox-home-light:hover{
+    padding: 2%;
+    font-size: 28px;
+    margin: 2%;
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    border-radius: 10%;
+    position: relative;
+    transition: background-color 0.2s, width ease-out 0.4s;
+}
+.navbox-light {
+    padding: 2%;
+    font-size: 28px;
+    margin: 2%;
+    margin-left: 30%;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    color: black;
+    border-radius: 10%;
+    transition: background-color 0.2s, width ease-out 0.4s;
+}
+.navbox-light:hover{
+    padding: 2%;
+    font-size: 28px;
+    margin: 2%;
+    margin-left: 30%;
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    color: black;
+    border-radius: 10%;
+    position: relative;
+    transition: background-color 0.2s, width ease-out 0.4s;
 }
 section.about {
     border-top: 10px solid black;
@@ -262,19 +334,31 @@ section.about {
 .themer {
     border-radius: 30%;
     padding: 1%;
-    transition: border ease-in 0.2ms;
+    transition: box-shadow ease-in 0.2ms;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
 }
 .themer:hover {
-    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+}
+button.slick-arrow.slick-next {
+    background-color: black;
+    border-radius: 50%;
+}
+button.slick-arrow.slick-prev {
+    background-color: black;
+    border-radius: 50%;
 }
 .about-section-dark {
     background-color: black;
     color: white;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
     width: 75%;
+    z-index: 1;
     margin: auto;
+    position: relative;
 }
+
 .about-section-light {
     background-color: white;
     color: black;
@@ -315,7 +399,7 @@ footer {
     margin-top: 55px;
     padding-top: 5px;
     color: white;
-    
+    position: relative;
 }
 .footer-icons {
     display: flex;
@@ -327,6 +411,8 @@ footer {
 .footer-icons > .social-icon {
     box-shadow: rgba(216, 159, 255, 0.568) 0px 3px 29px 0px;
     border-radius: 50%;
+    background-color: black;
+    border: 2px solid black;
 }
 .footer-icons > .social-icon:hover {
     box-shadow: rgba(187, 94, 248, 0.568) 0px 3px 29px 0px;
@@ -339,7 +425,6 @@ footer {
     padding: 20px;
 }
 .feedback {
-    color: white;
     margin-top: 5%;
 }
 .feedback-box {
@@ -363,12 +448,12 @@ footer {
     border-radius: 10px;
     height: 75px;
     margin-top: 5%;
-    transition: background-color ease-out 0.3s;
+    box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
+
 }
 .submit-feedback:hover {
-    border: 2px solid yellow;
-    background-color: rgb(127, 154, 245);
-    color: white;
+    box-shadow: rgba(187, 94, 248, 0.568) 0px 3px 29px 0px;
+    
 }
 @media only screen and (max-width: 1000px) {
     .flexing {

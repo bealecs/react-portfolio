@@ -1,13 +1,13 @@
 import React from "react";
 
 
-export function Welcome() {
+export function Welcome(props) {
     return (
-        <div className="welcome-container">
+        <div className={props.className}>
             <div className="container2">
             <section className="body">
                 <h1 className="name">Clifton Beale</h1>
-                <h3 className="goal">Aspiring Front-End Web Developer</h3>
+                <h3 className={props.className2}>Aspiring Front-End Web Developer</h3>
             </section>
             </div>
          </div>

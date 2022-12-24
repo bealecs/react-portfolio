@@ -11,10 +11,10 @@ export function Footer(props) {
         <footer className="footer">
             <h4>Contact me:</h4>
             <div className="footer-icons">
-                <SocialIcon url="https://www.linkedin.com/in/clif-beale" target="_blank" bgColor="white" className="social-icon" />
+                <SocialIcon url="https://www.linkedin.com/in/clif-beale" target="_blank" bgColor='white' className="social-icon" />
                 <SocialIcon url="https://github.com/bealecs?tab=repositories" target="_blank" bgColor="white" className="social-icon" />
                 <SocialIcon url="https://twitter.com/ClifCodes" target="_blank" bgColor="white" className="social-icon" />
-                <button className="themer" onClick={props.theme}>{Capitalize(props.themeSetting) + " Mode" }</button>
+                <button className="themer" onClick={props.theme}>{"Display: " + Capitalize(props.themeSetting)}</button>
             </div>
         </footer>
     );

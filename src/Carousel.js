@@ -3,12 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FeedbackForm } from "./Feedback";
+import { Portfolio } from "./Portfolio";
 
 const homeImg = "https://clipartix.com/wp-content/uploads/2016/05/Free-house-clip-art-clipart-clipartcow.gif";
 const jetImg = "https://clipartix.com/wp-content/uploads/2016/04/Airplane-air-plane-clip-art-clipart-6-clipartwiz-2.png";
 const computerImg = "https://clipartix.com/wp-content/uploads/2016/05/Laptop-computer-notebook-clip-art-at-clker-vector-clip-art.png";
 const thoughtImg ="https://clipartix.com/wp-content/uploads/2017/02/Speech-bubble-thought-bubble-speech-clip-art-at-vector-2-2.png";
 const stickyNoteImg = "https://clipartix.com/wp-content/uploads/2017/06/Thank-you-images-free-clipart.png"
+
 
 export default class SimpleSlider extends Component {
   render() {
