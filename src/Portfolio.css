@@ -2,6 +2,10 @@
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+*::selection {
+    background-color: rgba(187, 94, 248, 0.568);
+    color: grey;
+}
 .container-dark{
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -201,7 +205,7 @@ img.profile-img:hover {
     display: inline-flex;
     margin: auto;
 }
-.navbox:hover {
+.navbox-dark:hover {
     padding: 2%;
     margin: 2%;
     margin-left: 30%;
@@ -225,7 +229,7 @@ img.profile-img:hover {
     position: relative;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
-.navbox-home:hover {
+.navbox-home-dark:hover {
     padding: 2%;
     margin: 2%;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
@@ -259,6 +263,7 @@ img.profile-img:hover {
     color: black;
     border-radius: 10%;
     position: relative;
+    cursor: pointer;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-light {
@@ -287,6 +292,7 @@ img.profile-img:hover {
     color: black;
     border-radius: 10%;
     position: relative;
+    cursor: pointer;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 section.about {
