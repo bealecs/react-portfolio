@@ -26,17 +26,22 @@ export const Meal = () => {
                         strIngredient12, strIngredient13, strIngredient14, strIngredient15, strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20} = f;
                         
                 return (
-                    <article key={idMeal}>
-                        <h1 className='title1'>Meal Suggestion Generator</h1>
-                        <div className='button'>
-                            <button onClick={() => fetchFood()} className="btn">Get A Meal</button>
+                    <article key={idMeal} className='meal-article'>
+                        <div className='meal-section-1'>
+                            <h1 className='title1'>Meal Suggestion Generator</h1>
+                            <h2>{strMeal}</h2>
+                            <div className="underline"></div>
+                            <img src={strMealThumb} alt={strMeal} style={{width: '250px'}}/>
                         </div>
-                        <div className='home-return-box'>
-                            <Link to="/" className='home-nav'>Back to Home</Link>
+                        <div className='meal-section-2'>
+                            <div className='button'>
+                                <button onClick={() => fetchFood()} className="btn">Get A Meal</button>
+                            </div>
+                            <div className='home-return-box'>
+                                <Link to="/" className='home-nav'>Back to Home</Link>
+                            </div>
                         </div>
-                        <h2>{strMeal}</h2>
-                        <div className="underline"></div>
-                        <img src={strMealThumb} alt={strMeal} />
+                        <div className='meal-section-3'>
                         <h3 className='howto'>How to Cook</h3>
                         <div className='underline2'></div>
                         <p>{strInstructions}</p>
@@ -66,6 +71,7 @@ export const Meal = () => {
                                 {strIngredient19.length > 0 ? <li>{strIngredient19}</li> : null}
                                 {strIngredient20.length > 0 ? <li>{strIngredient20}</li> : null}
                             </ul>
+                        </div>
                         </div>
                     </article>
                 )

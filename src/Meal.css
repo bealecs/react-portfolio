@@ -1,10 +1,22 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+  article.meal-article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
   .title1 {
-    margin: 1%;
+    margin-bottom: 10%;
   }
   
+  .meals article img {
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20%;
+  }
   .meals p {
     line-height: 2;
     margin-left: 3%;
@@ -13,31 +25,31 @@
   .one li {
     padding: 2%;
   }
-  .button button {
+  .button > button.btn {
     border-radius: 20px;
     margin: 1%;
     width: 250px;
-    padding: 1%;
-    background-color: lightblue;
+    padding: 5%;
+    margin-top: 20%;
+    background-color: beige;
     transition: background-color linear 0.4s;
   }
   .home-nav {
     float: left;
   }
-  h3.howto {
+  .meals article h3 {
+    margin-top: 1%;
+    text-align: center;
     margin-bottom: 2%;
   }
+ .meals article h2 {
+  margin-bottom: 1%;
+ }
+ 
   h4.ingredients {
     margin-top: 2%;
     text-align: center;
     
-  }
-  img {
-    width:400px;
-    aspect-ratio: 1;
-  }
-  .btn {
-    background-color: beige;
   }
   .ingredients-div {
     display: flex;
@@ -50,8 +62,41 @@
   .home-return-box {
     margin: auto;
     padding: 2%;
-
   }
+  .home-nav {
+    color: black;
+    border: 1px solid black;
+    margin: 1%;
+    margin-top: 100%;
+    border-radius: 20px;
+    padding: 5%;
+    transition: background-color ease-out 0.4s;
+  }
+  .home-nav:hover {
+    color: black;
+    border: 1px solid black;
+    margin: 1%;
+    margin-top: 100%;
+    background-color: rgb(253, 242, 85);
+    border-radius: 20px;
+    padding: 5%;
+  }
+  button.btn:hover {
+    background-color: rgb(253, 242, 85);
+    color: black;
+  }
+  .meal-section-1 {
+    width: fit-content;
+    background-color: beige;
+  }
+.meal-section-2 {
+  width: fit-content;
+}
+.meal-section-3 {
+  width: 60%;
+  position: relative;
+}
+
   @media only screen and (max-width: 500px) {
     .meals p {
       padding: 0;
@@ -66,3 +111,13 @@
       margin: 0;
     }
   }
+
+
+
+ 
+ 
+  
+ 
+ 
+ 
+ 

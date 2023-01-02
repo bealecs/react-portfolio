@@ -6,6 +6,12 @@
     background-color: rgba(187, 94, 248, 0.568);
     color: grey;
 }
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 .container-dark{
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -370,6 +376,7 @@ footer {
     text-align: center;
     margin-top: 55px;
     padding-top: 1%;
+    padding-bottom: 1%;
     color: white;
     position: relative;
 }
