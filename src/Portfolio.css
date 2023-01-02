@@ -340,6 +340,7 @@ section.about {
 .themer {
     border-radius: 30%;
     padding: 1%;
+    color: grey;
     transition: box-shadow ease-in 0.2ms;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
 }
@@ -455,7 +456,7 @@ footer {
     height: 75px;
     margin-top: 5%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
-
+    
 }
 .submit-feedback:hover {
     box-shadow: rgba(187, 94, 248, 0.568) 0px 3px 29px 0px;

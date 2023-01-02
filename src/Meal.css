@@ -18,7 +18,7 @@
     margin: 1%;
     width: 250px;
     padding: 1%;
-    background-color: beige;
+    background-color: lightblue;
     transition: background-color linear 0.4s;
   }
   .home-nav {
@@ -31,6 +31,13 @@
     margin-top: 2%;
     text-align: center;
     
+  }
+  img {
+    width:400px;
+    aspect-ratio: 1;
+  }
+  .btn {
+    background-color: beige;
   }
   .ingredients-div {
     display: flex;
@@ -49,6 +56,10 @@
     .meals p {
       padding: 0;
       margin: 0;
+    }
+    img {
+      width: 150px;
+      aspect-ratio: 1;
     }
     .meal-container {
       padding: 0;

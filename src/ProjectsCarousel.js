@@ -72,7 +72,7 @@ export default class ProjectSlider extends Component {
             </div>
           </div>
           <div>
-            <FeedbackForm/>
+            <FeedbackForm />
           </div>
         </Slider>
       </div>
