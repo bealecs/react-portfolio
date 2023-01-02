@@ -113,17 +113,17 @@ section.body {
   height: fit-content;
 }
 h1.name {
-    padding: 15px;
+    padding: 2%;
     font-size: 50px;
 }
 h3.goal-dark {
-    padding: 15px;
+    padding: 10%;
     margin-top: 10px;
     font-size: 22px;
     border-left: 2px solid white;
 }
 h3.goal-light {
-    padding: 15px;
+    padding: 10%;
     margin-top: 10px;
     margin-left: 1%;
     font-size: 22px;
@@ -168,30 +168,10 @@ img.profile-img:hover {
 .proj img {
     margin: auto;
 }
-.project-buttons {
-    cursor: pointer;
-    padding: 50px;
-    background-color: rgba(4, 4, 116, 0.974);
-    color: white;
-    font-size: 22px;
-    margin: 20px;
-    width: 400px;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: background-color ease-out 0.4s, width ease-out 0.4s;
-}
-.project-buttons:hover {
-    background-color: rgb(127, 154, 245);
-    border: 2px solid yellow;
-    color: rgba(4, 4, 116, 0.974);
-    width: 100%;
-}
-
 .navbox-dark {
     padding: 2%;
     font-size: 28px;
     margin: 2%;
-    margin-left: 30%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
     background-color: black;
     height: fit-content;
@@ -208,7 +188,6 @@ img.profile-img:hover {
 .navbox-dark:hover {
     padding: 2%;
     margin: 2%;
-    margin-left: 30%;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
     background-color: black;
     width: fit-content;
@@ -301,20 +280,6 @@ section.about {
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.image-cards {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    height: auto;
-    margin: 50px;
-}
-
-.image-cards p {
-    height: auto;
-    margin: 50px;
-    text-align: justify;
-}
 
 .underline-section {
     height: 5px;
@@ -328,7 +293,7 @@ section.about {
     text-align: justify;
 }
 .slider-container h2 {
-    padding-top: 15px;
+    padding-top: 2%;
 }
 .slider-container img {
     width: fit-content;
@@ -404,7 +369,7 @@ button.slick-arrow.slick-prev {
 footer {
     text-align: center;
     margin-top: 55px;
-    padding-top: 5px;
+    padding-top: 1%;
     color: white;
     position: relative;
 }
@@ -413,7 +378,7 @@ footer {
     margin: 20px;
     margin-bottom: 0;
     justify-content: space-evenly;
-    padding-bottom: 30px;
+    padding-bottom: 1%;
 }
 .footer-icons > .social-icon {
     box-shadow: rgba(216, 159, 255, 0.568) 0px 3px 29px 0px;
@@ -429,7 +394,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 2%;
 }
 .feedback {
     margin-top: 5%;
@@ -438,7 +403,7 @@ footer {
     margin: auto;
     width: 90%;
     text-align: center;
-    padding: 20px;
+    padding: 1%;
     margin-top: 5%;
     margin-bottom: 10px;
     line-height: 2;
@@ -462,7 +427,7 @@ footer {
     box-shadow: rgba(187, 94, 248, 0.568) 0px 3px 29px 0px;
     
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
     .about-section-dark {
         margin-top: 2%;
     }
@@ -480,6 +445,34 @@ footer {
     }
     .proj-inline {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .about-section-dark {
+        margin-top: 2%;
+    }
+    .about-section-light {
+        margin-top: 2%;
+    }
+    .flexing {
+        display: block;
+    }
+    .flexing > img {
+        margin: auto;
+    }
+    .flexington {
+        padding: 2%;
+    }
+    .proj-inline2 {
+        width: 100%;
+    }
+    .proj-inline {
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
     }
 }
 @media only screen and (max-width: 500px) {
