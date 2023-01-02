@@ -463,8 +463,23 @@ footer {
     
 }
 @media only screen and (max-width: 1000px) {
+    .about-section-dark {
+        margin-top: 2%;
+    }
+    .about-section-light {
+        margin-top: 2%;
+    }
     .flexing {
         display: block;
+    }
+    .flexing > img {
+        margin: auto;
+    }
+    .proj-inline2 {
+        width: 100%;
+    }
+    .proj-inline {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 500px) {
