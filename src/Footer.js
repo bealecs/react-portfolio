@@ -13,7 +13,7 @@ export function Footer(props) {
             <div className="footer-icons">
                 <SocialIcon url="https://www.linkedin.com/in/clif-beale" target="_blank" bgColor='white' className="social-icon" />
                 <SocialIcon url="https://github.com/bealecs?tab=repositories" target="_blank" bgColor="white" className="social-icon" />
-                <SocialIcon url="https://twitter.com/ClifCodes" target="_blank" bgColor="white" className="social-icon" />
+                <SocialIcon url="https://discordapp.com/users/Clif#6040" target="_blank" bgColor="white" className="social-icon" />
                 <button className="themer" onClick={props.theme}>{"Display: " + Capitalize(props.themeSetting)}</button>
             </div>
         </footer>

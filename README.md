@@ -1,3 +1,7 @@
+
+This is my most recent portfolio, created using the React framework along with some CSS. You can read a little bit about my life, my goals, and my journies. Also, I have listed several of the projects I have created throughout my learnings. Thank you for stopping by; P.S. - don't forget to leave some feedback in the feedback box on the last slide
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
