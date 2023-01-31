@@ -8,12 +8,7 @@ import ProjectSlider from "./ProjectsCarousel";
 import { ProfileImage } from "./ProfileImage";
 import Snowfall from 'react-snowfall';
 
-export const Context = createContext(undefined);
-export const Provider = props => {
-
-}
 export function Portfolio() {
-  const themeContext = createContext();
   const [NavState, setNavState] = React.useState(false);
   const [theme, setTheme] = React.useState("dark");
 
