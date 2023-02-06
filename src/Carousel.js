@@ -67,7 +67,7 @@ export default class SimpleSlider extends Component {
           <img src={stickyNoteImg} alt="a sticky note saying thank you" style={{ width: 300, height: 300 }} />
           <p className="flexington">Now that I am getting back into programming,
         I thought it would be more suitable to start off learning web development. Learning HTML and CSS has surely been easier than the JavaScript, but the JavaScript is pretty
-        familiar after all these years, given its similiarites to Java. This portfolio site is a personal project, but also a professional one. I would like to share a quote that I read that stuck with me:
+        fun to dive into all of the different frameworks and try new things. This portfolio site is a personal project, but also a professional one. I would like to share a quote that I read that stuck with me:
         "Programming isn't about what you know, it is about what you can figure out" -Chris Pine. Hopefully, my hard work can prove
         that you don't need a degree to excel in any field; all you need is the dedication to succeed and the love for the skill. <br /><br />
         The projects listed in the projects tab are
