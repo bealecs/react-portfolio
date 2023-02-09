@@ -12,20 +12,27 @@ p {
     padding-left: 100px;
     padding-right: 100px;
   }
+  .nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+    border-bottom: 2px solid #EFC88B;
+  }
 .container-dark{
+    background-color: #2B2D2E;
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: black;
 }
 .container-light{
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
     color: black;
 }
 .header-container {
     display: inline-flex;
     width: 100%;
+    height: fit-content;
 }
 .about-container {
     display: flex;
@@ -40,19 +47,24 @@ p {
 .welcome-container-dark {
     text-shadow: 2px 2px grey;
     color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #545775;
 }
 .welcome-container-light {
     color: black;
     text-shadow: 2px 2px grey;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
 }
 .welcome-container h2 {
     
     text-align: center;
     width: 33%;
-}
-.container2 {
-    display: inline-flex;
-    
 }
 .container3 {
     height: fit-content;
@@ -120,21 +132,24 @@ section.body {
 }
 h1.name {
     padding: 2%;
+    margin-top: 1%;
     font-size: 50px;
+    color: #EFC88B;
 }
 h3.goal-dark {
-    padding: 10%;
-    margin-top: 10px;
-    margin-left: 1%;
+    padding: 3%;
+    margin-top: 1%;
     font-size: 22px;
-    border-left: 4px solid white;
+    border-left: 2px solid #EFC88B;
+    height: fit-content;
+    color: rgb(239, 200, 139);
 }
 h3.goal-light {
-    padding: 10%;
-    margin-top: 10px;
-    margin-left: 1%;
+    padding: 3%;
+    margin-top: 1%;
     font-size: 22px;
-    border-left: 4px solid black;
+    border-left: 2px solid white;
+    height: fit-content;
 }
 h2.about {
     margin-top: 25px;
@@ -151,7 +166,6 @@ a {
     color: white;
 }
 img.profile-img {
-    float: right;
     margin: 1%;
     border-radius: 50%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
@@ -178,14 +192,11 @@ img.profile-img:hover {
 .navbox-dark {
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
-    margin-left: 30%;
+    margin: 5%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
-    background-color: black;
+    background-color: #718F94;
     height: fit-content;
-    width: fit-content;
-    position: relative;
-    color: white;
+    color: rgb(239, 200, 139, 0.9);
     border-radius: 10%;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
@@ -196,42 +207,41 @@ img.profile-img:hover {
 .navbox-dark:hover {
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
-    margin-left: 30%;
+    margin: 5%;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
-    background-color: black;
+    background-color: #718F94;
     width: fit-content;
     border-radius: 10%;
-    color: beige;
+    color: #EFC88B;
     cursor: pointer;
 }
 .navbox-home-dark{
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
+    margin: 5%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
-    background-color: black;
+    background-color: #718F94;
     height: fit-content;
     width: fit-content;
-    color: white;
+    color: rgb(239, 200, 139, 0.9);
     border-radius: 10%;
     position: relative;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-home-dark:hover {
     padding: 2%;
-    margin: 2%;
+    margin: 5%;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
-    background-color: black;
+    background-color: #718F94;
     width: fit-content;
     border-radius: 10%;
-    color: beige;
+    color: #EFC88B;
     cursor: pointer;
 }
 .navbox-home-light{
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
+    margin: 5%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
     background-color: white;
     height: fit-content;
@@ -244,7 +254,7 @@ img.profile-img:hover {
 .navbox-home-light:hover{
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
+    margin: 5%;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
     background-color: white;
     height: fit-content;
@@ -258,8 +268,7 @@ img.profile-img:hover {
 .navbox-light {
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
-    margin-left: 30%;
+    margin: 5%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
     background-color: white;
     height: fit-content;
@@ -272,8 +281,7 @@ img.profile-img:hover {
 .navbox-light:hover{
     padding: 2%;
     font-size: 28px;
-    margin: 2%;
-    margin-left: 30%;
+    margin: 5%;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
     background-color: white;
     height: fit-content;
@@ -313,15 +321,20 @@ section.about {
     padding-top: 5%;
 }
 .themer {
-    border-radius: 30%;
-    padding: 1%;
-    color: grey;
+    border-radius: 40%;
+    margin: 4%;
+    height: 50%;
+    color: rgb(239, 200, 139, 0.9);
+    border: none;
+    font-size: 1.2rem;
+    background-color: #718F94;
     transition: box-shadow ease-in 0.2ms;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
 }
 .themer:hover {
     cursor: pointer;
     box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
+    color: rgb(239, 200, 139);
 }
 button.slick-arrow.slick-next {
     background-color: black;
@@ -332,9 +345,9 @@ button.slick-arrow.slick-prev {
     border-radius: 50%;
 }
 .about-section-dark {
-    background-color: black;
-    color: white;
-    box-shadow: rgba(216, 159, 255, 0.568) 0px 7px 29px 0px;
+    background-color: #718F94;
+    color: #EFC88B;
+    box-shadow: #718F94 0px 7px 29px 0px;
     width: 75%;
     z-index: 1;
     margin: auto;
@@ -350,7 +363,7 @@ button.slick-arrow.slick-prev {
 }
 .about-section-dark h2 {
     text-align: center;
-    color: white;
+    color: #EFC88B;
 }
 .about-section-light h2 {
     text-align: center;
@@ -359,7 +372,7 @@ button.slick-arrow.slick-prev {
 .about-section-dark p {
     text-align: left;
     margin: 0;
-    color: white;
+    color: #EFC88B;
 }
 .about-section-light p {
     text-align: left;
@@ -381,7 +394,7 @@ footer {
     margin-top: 55px;
     padding-top: 1%;
     padding-bottom: 1%;
-    color: white;
+    color: rgba(211, 213, 215);
     position: relative;
 }
 .footer-icons {
@@ -392,13 +405,13 @@ footer {
     padding-bottom: 1%;
 }
 .footer-icons > .social-icon {
-    box-shadow: rgba(216, 159, 255, 0.568) 0px 3px 29px 0px;
+    box-shadow: #D3D5D7 0px 3px 22px 0px;
     border-radius: 50%;
     background-color: black;
     border: 2px solid black;
 }
 .footer-icons > .social-icon:hover {
-    box-shadow: rgba(187, 94, 248, 0.568) 0px 3px 29px 0px;
+    box-shadow: #D3D5D7 0px 3px 29px 0px;
     border-radius: 50%;
 }
 .feedback {

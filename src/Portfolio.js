@@ -2,11 +2,8 @@ import React, { createContext, useEffect } from "react";
 import './Portfolio.css';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
-import { Welcome } from "./Welcome";
 import SimpleSlider from "./Carousel";
 import ProjectSlider from "./ProjectsCarousel";
-import { ProfileImage } from "./ProfileImage";
-import Snowfall from 'react-snowfall';
 
 export function Portfolio() {
   const [NavState, setNavState] = React.useState(false);
@@ -50,13 +47,18 @@ export function Portfolio() {
   return (
     <div className={containerClassName}>
       <div className="header-container">
-        <Snowfall />
-        <Welcome className={welcomeTheme} className2={welcomeThemeGoal}/>
-        <Navbar className={aboutButton} className2={projectsButton} home={handleClick2} projects={handleClick}/>
-        <ProfileImage />
+        <Navbar 
+          className={welcomeTheme}
+          className2={welcomeThemeGoal} 
+          className3={aboutButton} 
+          className4={projectsButton} 
+          home={handleClick2}
+          projects={handleClick} 
+          theme={toggleTheme}
+          themeSetting={theme}/>
       </div>
       {NavState ? <ProjectSlider className={aboutContainerClassName} className2={buttonTheme}/> : <SimpleSlider className={aboutContainerClassName} />} 
-      <Footer theme={toggleTheme} themeSetting={theme}/> 
+      <Footer/> 
     </div>
     
   )
