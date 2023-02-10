@@ -63,18 +63,7 @@ export default class ProjectSlider extends Component {
               <a href={calcUrl} target="_blank" rel="noopener noreferrer"><button className={this.props.className2}>Go</button></a>
             </div>
           </div>
-          <div className="proj">
-            <div className="proj-inline">
-              <img src={xo} alt="a tic-tac-toe board almost complete" style={{ width: 300, height: 300 }} />
-              <h2>Tic-Tac-Toe</h2>
-            </div>
-            <div className="proj-inline2">
-              <p>A childhood favorite, and a good task for a learner like myself. This project was my first to complete, and surprisingly enough uses very little JavaScript.
-                Mostly, it is just changes in CSS styling using a little bit of JavaScript for event listeners.
-              </p>
-              <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button className={this.props.className2}>Go</button></a>
-            </div>
-          </div>
+          
         </Slider>
       </div>
       </div>

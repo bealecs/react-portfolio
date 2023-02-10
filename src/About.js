@@ -19,7 +19,7 @@ export const About = (props) => {
                     </p>
                 </div>
                 <div className="cards">
-                    <img src={gaming}/>
+                    <img src={gaming} style={{aspectRatio:'1.6'}}/>
                     <h4>I like gaming</h4>
                     <p>I think my love for coding and my love for gaming go hand in hand. I discovered my passion for coding from playing MMORPGs when I was young. To this day, 
                         I am still up to date on a lot of the popular games and enjoy playing in my free time.
