@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FeedbackForm } from "./Feedback";
-import { Portfolio } from "./Portfolio";
 
 const homeImg = "https://clipartix.com/wp-content/uploads/2016/05/Free-house-clip-art-clipart-clipartcow.gif";
 const jetImg = "https://clipartix.com/wp-content/uploads/2016/04/Airplane-air-plane-clip-art-clipart-6-clipartwiz-2.png";
@@ -22,6 +21,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
+      
       <div className={this.props.className}>
         <div className="slider-container">
         <h2> Get to know me</h2>

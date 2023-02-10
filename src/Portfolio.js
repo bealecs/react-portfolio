@@ -1,9 +1,11 @@
-import React, { createContext, useEffect } from "react";
+import React from "react";
 import './Portfolio.css';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
 import SimpleSlider from "./Carousel";
 import ProjectSlider from "./ProjectsCarousel";
+import { About } from "./About";
+import { FeedbackForm } from "./Feedback";
 
 export function Portfolio() {
   const [NavState, setNavState] = React.useState(false);
@@ -57,7 +59,8 @@ export function Portfolio() {
           theme={toggleTheme}
           themeSetting={theme}/>
       </div>
-      {NavState ? <ProjectSlider className={aboutContainerClassName} className2={buttonTheme}/> : <SimpleSlider className={aboutContainerClassName} />} 
+      {NavState ? <ProjectSlider className={aboutContainerClassName} className2={buttonTheme}/> : <About />}
+      <FeedbackForm />
       <Footer/> 
     </div>
     

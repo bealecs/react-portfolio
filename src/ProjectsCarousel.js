@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
 import { FeedbackForm } from "./Feedback";
 
 export default class ProjectSlider extends Component {
@@ -23,10 +22,12 @@ export default class ProjectSlider extends Component {
     const mealUrl = "https://clifscatalog.netlify.app";
 
     return (
+      <>
+      <h2 className="starter-h2">Feel free to take a look through my listings; I have showcased my most frequent work that I am proud of. These projects consist of different Javascript frameworks like react and nextjs, and I even got to play around with Firebase's service for the authentication on some of the projects. </h2>
       <div className={this.props.className}>
         <div className="slider-container">
         <h2> My Projects</h2>
-        <Slider {...settings}>
+        <Slider {...settings} style={{marginBottom:'5%'}}>
         <div className="proj">
             <div className="proj-inline">
               <img src={ballUrl} alt="stock market clipart" style={{ width: 300, height: 300 }} />
@@ -74,14 +75,10 @@ export default class ProjectSlider extends Component {
               <a href={xoUrl} target="_blank" rel="noopener noreferrer"><button className={this.props.className2}>Go</button></a>
             </div>
           </div>
-          
-          
-          <div>
-            <FeedbackForm />
-          </div>
         </Slider>
       </div>
       </div>
+      </>
     );
   }
 }
