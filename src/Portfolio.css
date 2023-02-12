@@ -155,17 +155,19 @@ h3.goal-light {
 h2.about {
     margin-top: 25px;
 }
+.projects-background {
+    background-color: #38565D;
+}
 .starter-h2 {
     color: #EFC88B;
     text-shadow: 0.5px 0.5px #2B2D2E;
     margin: auto;
     line-height: 2.5rem;
     padding: 3%;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-bottom: 3%;
+    width: 70%;
     background-color: #38565D;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
 }
 nav {
     display: flex;
@@ -184,6 +186,12 @@ img.profile-img {
     border-radius: 50%;
     box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 19px 0px;
     position: relative;
+}
+.project-message {
+    color: #EFC88B;
+    text-align: center;
+    padding: 4%;
+    line-height: 2.5rem;
 }
 img.profile-img:hover {
     cursor: none;
@@ -463,6 +471,11 @@ footer {
     background-color: #2B2D2E;
     color: rgba(211, 213, 215);
     position: relative;
+}
+.footer > h4 {
+    color: #EFC88B;
+    font-size: 1.5rem;
+    padding: 2%;
 }
 .footer-icons {
     display: flex;

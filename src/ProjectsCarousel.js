@@ -22,7 +22,7 @@ export default class ProjectSlider extends Component {
     const mealUrl = "https://clifscatalog.netlify.app";
 
     return (
-      <>
+      <div className="projects-background">
       <h2 className="starter-h2">Feel free to take a look through my listings; I have showcased my most frequent work that I am proud of. These projects consist of different Javascript frameworks like react and nextjs, and I even got to play around with Firebase's service for the authentication on some of the projects. </h2>
       <div className={this.props.className}>
         <div className="slider-container">
@@ -67,7 +67,10 @@ export default class ProjectSlider extends Component {
         </Slider>
       </div>
       </div>
-      </>
+      <h2 className="project-message">Since I started learning, I had high hopes. Becoming a member of the Vets Who Code group is a huge step in the right direction for me. I have been diving deep into learning 
+      different frameworks and just learning with what was out there. In the future, I hope to integrate more AI into my work, and maybe even add APIs integrating AI technology into my work. All in all, I am very
+      excited to see where this road takes me. Thank you for checking out my page!</h2>
+      </div>
     );
   }
 }
