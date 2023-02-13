@@ -17,7 +17,6 @@ export const Navbar = (props) => {
                 <div className={props.className3} onClick={props.home}>About
                     <Link to="/" className="nav-item"></Link> 
                 </div>
-         
                 <div className={props.className4} onClick={props.projects}>Projects  
                     <Link to="/" className="nav-item"></Link>
                 </div>
