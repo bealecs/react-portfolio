@@ -45,6 +45,18 @@ export function Portfolio() {
   var welcomeTheme = "welcome-container-" + theme;
   var welcomeThemeGoal = "goal-" + theme;
   var buttonTheme = "theme-" + theme;
+  var name = "name-" + theme;
+  var img = "profile-" + theme;
+  var themer = "themer-" + theme;
+  var message = "about-message-" + theme;
+  var cards = "about-cards-" + theme;
+  var cards2 = "cards-" + theme;
+  var outro = "outro-" + theme;
+  var navContainer = "nav-container-" + theme;
+  var footerTheme = "footer-" + theme;
+  var feedbackTheme = "feedback-" + theme;
+  var starterMessage = "starter-h2-" + theme;
+  var projBackground = "projects-background-" + theme;
   
   return (
     <div className={containerClassName}>
@@ -53,15 +65,19 @@ export function Portfolio() {
           className={welcomeTheme}
           className2={welcomeThemeGoal} 
           className3={aboutButton} 
-          className4={projectsButton} 
+          className4={projectsButton}
+          className5={name}
+          className6={img}
+          className7={themer} 
           home={handleClick2}
           projects={handleClick} 
           theme={toggleTheme}
-          themeSetting={theme}/>
+          themeSetting={theme}
+          navContainer={navContainer}/>
       </div>
-      {NavState ? <ProjectSlider className={aboutContainerClassName} className2={buttonTheme}/> : <About />}
-      <FeedbackForm />
-      <Footer/> 
+      {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2}/>}
+      <FeedbackForm feedback={feedbackTheme}/>
+      <Footer footer={footerTheme}/> 
     </div>
     
   )

@@ -6,8 +6,8 @@ import { SocialIcon } from 'react-social-icons';
 export function Footer(props) {
    
     return (
-        <footer className="footer">
-            <h4>Feel free to reach out! Find me here :</h4>
+        <footer className={props.footer}>
+            <h4>Check out my repositories with github, visit my LinkedIn, or just drop a chat on discord :</h4>
             <div className="footer-icons">
                 <SocialIcon url="https://www.linkedin.com/in/clif-beale" target="_blank" bgColor='white' className="social-icon" />
                 <SocialIcon url="https://github.com/bealecs?tab=repositories" target="_blank" bgColor="white" className="social-icon" />
