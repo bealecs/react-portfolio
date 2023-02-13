@@ -623,18 +623,30 @@ button.slick-arrow.slick-prev {
 .feedback-box:focus:invalid {
     border: 2px solid red;
 }
-.submit-feedback {
+.submit-feedback-dark {
     margin: auto;
     width: 200px;
     border-radius: 10px;
     height: 75px;
     margin-top: 5%;
+    background-color: #38565D;
     box-shadow: #D3D5D7 0px 7px 19px 0px;
-    
+}
+.submit-feedback-light {
+    margin: auto;
+    width: 200px;
+    border-radius: 10px;
+    height: 75px;
+    margin-top: 5%;
+    background-color: #F9F6EE;
+    box-shadow: #BEE5BF 0px 7px 19px 0px;
+}
+.submit-feedback-dark:hover {
+    box-shadow: #38565D 0px 3px 29px 0px;
     
 }
-.submit-feedback:hover {
-    box-shadow: #D3D5D7 0px 3px 29px 0px;
+.submit-feedback-light:hover {
+    box-shadow: #9cec9e 0px 3px 29px 0px;
     
 }
 @media only screen and (max-width: 1500px) {
