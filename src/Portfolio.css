@@ -50,7 +50,7 @@ p {
     margin: 2% 1%;
 }
 .welcome-container-dark {
-    text-shadow: 2px 2px grey;
+    
     color: white;
     display: flex;
     flex-wrap: nowrap;
@@ -60,7 +60,7 @@ p {
 }
 .welcome-container-light {
     color: #46494C;
-    text-shadow: 2px 2px grey;
+    
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -422,6 +422,7 @@ button.slick-arrow.slick-prev {
     z-index: 1;
     margin: auto;
     position: relative;
+    border-radius: 5%;
 }
 .about-section-dark h2 {
     text-align: center;
