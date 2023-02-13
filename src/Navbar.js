@@ -21,7 +21,7 @@ export const Navbar = (props) => {
                 <div className={props.className4} onClick={props.projects}>Projects  
                     <Link to="/" className="nav-item"></Link>
                 </div>
-                <button className={props.className7} onClick={props.theme}>{"Toggle Display: " + Capitalize(props.themeSetting)}</button>
+                <h2 className={props.className7} onClick={props.theme}>{props.themeSetting === "dark" ? "🔆" : "🌙"}</h2>
             </div>
             
         </div>

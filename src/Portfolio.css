@@ -378,34 +378,24 @@ section.about {
 .themer-dark {
     border-radius: 40%;
     margin: 4%;
-    height: 50%;
-    color: rgb(239, 200, 139, 0.9);
+    height: fit-content;
     border: none;
-    font-size: 1.2rem;
-    background-color: #38565D;
-    transition: box-shadow ease-in 0.2ms;
-    box-shadow: rgba(216, 159, 255, 0.568) 0px 5px 9px 0px;
+    padding: none;
+    font-size: 5rem;
+
 }
 .themer-light {
     border-radius: 40%;
     margin: 4%;
-    height: 50%;
-    color: #46494C;
+    height: fit-content;
     border: none;
-    font-size: 1.2rem;
-    background-color: #F9F6EE;
-    transition: box-shadow ease-in 0.2ms;
-    box-shadow: #9cec9e 0px 5px 9px 0px;
+    font-size: 5rem;
 }
 .themer-dark:hover {
     cursor: pointer;
-    box-shadow: rgba(187, 94, 248, 0.568) 0px 7px 29px 0px;
-    color: rgb(239, 200, 139);
 }
 .themer-light:hover {
     cursor: pointer;
-    box-shadow: #9cec9e 0px 7px 29px 0px;
-    color: #46494C;
 }
 button.slick-arrow.slick-next {
     background-color: black;
