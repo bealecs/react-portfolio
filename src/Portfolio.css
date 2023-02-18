@@ -556,6 +556,7 @@ button.slick-arrow.slick-prev {
 }
 .footer-dark {
     text-align: center;
+    margin-top: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: #2B2D2E;
@@ -564,6 +565,7 @@ button.slick-arrow.slick-prev {
 }
 .footer-light {
     text-align: center;
+    margin-top: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: #DFF3E3;
