@@ -159,7 +159,7 @@ h3.goal-light {
     padding: 3%;
     margin-top: 1%;
     font-size: 22px;
-    border-left: 2px solid white;
+    border-left: 2px solid #46494C;
     height: fit-content;
 }
 h2.about {
@@ -187,7 +187,7 @@ h2.about {
     margin: auto;
     line-height: 2.5rem;
     padding: 3%;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-bottom: 3%;
     width: 70%;
     background-color: #BEE5BF;
@@ -508,6 +508,23 @@ button.slick-arrow.slick-prev {
 .outro-light p {
     font-size: 20px;
 }
+.skill-cards-dark {
+    width: 40%;
+    background-color: #5B6E5C;
+    margin: auto;
+    margin-bottom: 2%;
+    box-shadow: #5B6E5C 0px 7px 19px 0px;
+    border-radius: 10px;
+}
+.skill-cards-light {
+    width: 40%;
+    background-color: #FFD1BA;
+    margin: auto;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    box-shadow: #FFD1BA 0px 7px 19px 0px;
+    border-radius: 10px;
+}
 .cards-dark {
     width: 40%;
     background-color: #5B6E5C;
@@ -531,8 +548,18 @@ button.slick-arrow.slick-prev {
 }
 .cards-dark h4 {
     color: #EFC88B;
+    font-size: 1.2rem;
 }
 .cards-light h4 {
+    font-size: 1.2rem;
+    color: #46494C;
+}
+.skill-cards-dark h4 {
+    color: #EFC88B;
+    font-size: 2rem;
+}
+.skill-cards-light h4 {
+    font-size: 2rem;
     color: #46494C;
 }
 .cards-dark p {
@@ -541,12 +568,28 @@ button.slick-arrow.slick-prev {
     height: fit-content;
     padding-top: 3%;
     color: #EFC88B;
+    font-size: 1.2rem;
 }
 .cards-light p {
     margin: auto;
     width: fit-content;
     height: fit-content;
     padding-top: 3%;
+    color: #46494C;
+    font-size: 1.2rem;
+}
+.skill-cards-dark li {
+    width: fit-content;
+    height: fit-content;
+    padding: 3%;
+    margin-left: 10%;
+    color: #EFC88B;
+}
+.skill-cards-light li {
+    width: fit-content;
+    height: fit-content;
+    padding: 3%;
+    margin-left: 10%;
     color: #46494C;
 }
 .about-message > p {
@@ -565,23 +608,27 @@ button.slick-arrow.slick-prev {
 }
 .footer-light {
     text-align: center;
-    margin-top: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: #DFF3E3;
     color: #46494C;
     position: relative;
 }
-.footer > h4 {
+.footer-dark > h4 {
     color: #EFC88B;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.footer-light > h4 {
+    color: #46494C;
     font-size: 1.5rem;
     padding: 2%;
 }
 .footer-icons {
     display: flex;
-    margin: 20px;
+    margin: 2%;
     margin-bottom: 0;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 1%;
 }
 .footer-icons > .social-icon {
@@ -613,7 +660,7 @@ button.slick-arrow.slick-prev {
 }
 .feedback-box {
     margin: auto;
-    width: 90%;
+    width: 60%;
     text-align: center;
     padding: 1%;
     margin-top: 5%;

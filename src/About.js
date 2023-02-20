@@ -46,6 +46,16 @@ export const About = (props) => {
                     enough to be selected as a part of such a great group. I cannot wait to see what is in store for me down the road, and what else I will learn as the days go by. 
                 </p>
             </div>
+            <div className={props.skillCards}>
+                <h4>My Skills :</h4>
+                <ul>
+                    <li>HTML/CSS/Bootstrap</li>
+                    <li>Vanilla JavaScript</li>
+                    <li>React</li>
+                    <li>NextJS</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
         </div>
     )
 }

@@ -51,6 +51,7 @@ export function Portfolio() {
   var message = "about-message-" + theme;
   var cards = "about-cards-" + theme;
   var cards2 = "cards-" + theme;
+  var skillCards = "skill-cards-" + theme;
   var outro = "outro-" + theme;
   var navContainer = "nav-container-" + theme;
   var footerTheme = "footer-" + theme;
@@ -76,7 +77,7 @@ export function Portfolio() {
           themeSetting={theme}
           navContainer={navContainer}/>
       </div>
-      {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2}/>}
+      {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
       <Footer footer={footerTheme}/> 
     </div>
