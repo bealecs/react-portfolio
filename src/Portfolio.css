@@ -705,7 +705,7 @@ button.slick-arrow.slick-prev {
     height: 75px;
     margin-top: 5%;
     background-color: #38565D;
-    box-shadow: #D3D5D7 0px 7px 19px 0px;
+    box-shadow: #d89fff91 0px 5px 9px 0px;
 }
 .submit-feedback-light {
     margin: auto;
@@ -717,7 +717,7 @@ button.slick-arrow.slick-prev {
     box-shadow: #BEE5BF 0px 7px 19px 0px;
 }
 .submit-feedback-dark:hover {
-    box-shadow: #38565D 0px 3px 29px 0px;
+    box-shadow: #d89fff91 0px 3px 29px 0px;
     
 }
 .submit-feedback-light:hover {
