@@ -501,6 +501,7 @@ button.slick-arrow.slick-prev {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: fit-content;
+    height: fit-content;
 }
 .outro-dark {
     padding: 7%;
@@ -541,7 +542,7 @@ button.slick-arrow.slick-prev {
     background-color: #FFD1BA;
     margin: auto;
     margin-bottom: 2%;
-    font-size: 1.5rem;
+    
     box-shadow: #FFD1BA 0px 7px 19px 0px;
     border-radius: 10px;
 }
@@ -559,6 +560,7 @@ button.slick-arrow.slick-prev {
     margin-top: 4%;
     box-shadow: #FFD1BA 0px 7px 19px 0px;
     border-radius: 10px;
+    height: fit-content;
 }
 .cards-dark img {
     width: 50%;
