@@ -35,7 +35,9 @@ export const About = (props) => {
                 <div className={props.cards}>
                     <img style={{height:"50%"}} src={family}/>
                     <h4>I'm a family man</h4>
-                    <p>I got married in September of 2022 to my beautiful wife Marisela. Since then, we closed on our first house! Together we have two puppies, Max and Nymeria, and I wouldn't trade it for the world.</p>
+                    <p>I got married in September of 2022 to my beautiful wife Marisela. Since then, we closed on our first house! Together we have two puppies, Max and Nymeria, and I wouldn't trade it for the world.
+                        My wife is my biggest supporter and has been a big help along my journey.
+                    </p>
                 </div>
             </div>
             <div className={props.outro}>

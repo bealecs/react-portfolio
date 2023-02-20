@@ -28,6 +28,7 @@ p {
     background-color: #2B2D2E;
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
 }
 .container-light{
     background-size: contain;
@@ -260,6 +261,19 @@ img.profile-img:hover {
     display: inline-flex;
     margin: auto;
 }
+.nav-buttons-div {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.nav-buttons-div div {
+   padding: 6%;
+}
+.nav-buttons-div div:hover {
+    padding: 6%;
+}
 .navbox-dark:hover {
     padding: 2%;
     font-size: 28px;
@@ -382,7 +396,7 @@ section.about {
     height: fit-content;
     border: none;
     padding: none;
-    font-size: 5rem;
+    font-size: 4rem;
 
 }
 .themer-light {
@@ -390,7 +404,7 @@ section.about {
     margin: 4%;
     height: fit-content;
     border: none;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .themer-dark:hover {
     cursor: pointer;
@@ -480,6 +494,7 @@ button.slick-arrow.slick-prev {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: fit-content;
+    height: fit-content;
 }
 .about-message-light > .about-cards-light {
     display: flex;
@@ -536,20 +551,22 @@ button.slick-arrow.slick-prev {
     margin-top: 4%;
     box-shadow: #5B6E5C 0px 7px 19px 0px;
     border-radius: 10px;
+    height: fit-content;
 }
 .cards-light {
     width: 40%;
     background-color: #FFD1BA;
     margin-top: 4%;
-    font-size: 1.5rem;
     box-shadow: #FFD1BA 0px 7px 19px 0px;
     border-radius: 10px;
 }
 .cards-dark img {
     width: 50%;
+    aspect-ratio: 1;
 }
 .cards-light img {
     width: 50%;
+    aspect-ratio: 1;
 }
 .cards-dark h4 {
     color: #EFC88B;
@@ -557,6 +574,7 @@ button.slick-arrow.slick-prev {
 }
 .cards-light h4 {
     font-size: 1.2rem;
+    height: fit-content;
     color: #46494C;
 }
 .skill-cards-dark h4 {
@@ -574,6 +592,7 @@ button.slick-arrow.slick-prev {
     padding-top: 3%;
     color: #EFC88B;
     font-size: 1.2rem;
+    height: fit-content;
 }
 .cards-light p {
     margin: auto;
@@ -770,14 +789,7 @@ button.slick-arrow.slick-prev {
     .flexing {
         display: block;
     }
-    .about-section-dark {
-        width: 90%;
-        
-    }
-    .about-section-light {
-        width: 90%;
     
-    }
     #root {
         margin-right: 0;
         padding-right: 0;
@@ -801,6 +813,7 @@ button.slick-arrow.slick-prev {
         margin: 0;
         padding: 0;
     }
+     
 }
 @media only screen and (max-width: 500px) {
     .profile-img {

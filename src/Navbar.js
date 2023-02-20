@@ -14,11 +14,13 @@ export const Navbar = (props) => {
                 <img src={logo} alt='profile-img' className={props.className6} style={{width: 200, height: 200}}/>
                 <h1 className={props.className5}>Clifton Beale</h1>
                 <h3 className={props.className2}>Front-End Web Developer <br></br><br></br> #VetsWhoCode</h3>
+                <div className="nav-buttons-div">
                 <div className={props.className3} onClick={props.home}>About
                     <Link to="/" className="nav-item"></Link> 
                 </div>
                 <div className={props.className4} onClick={props.projects}>Projects  
                     <Link to="/" className="nav-item"></Link>
+                </div>
                 </div>
                 <h2 className={props.className7} onClick={props.theme}>{props.themeSetting === "dark" ? "🔆" : "🌙"}</h2>
             </div>

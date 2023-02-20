@@ -5,12 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
-  return (
-    <Routes>
-    <Route path='/' element={<Portfolio />} />
-    <Route path='/meal' element={<Meal />} />
-    </Routes>
-  );
+  return <Portfolio />
 }
 
 export default App;
