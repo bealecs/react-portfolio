@@ -12,31 +12,31 @@ export const About = (props) => {
             <h2>I'm a simple man</h2>
             <div className={props.aboutCards}>
                 <div className={props.cards}>
+                    <img style={{height:"50%"}} src={family}/>
+                    <h4>Family</h4>
+                    <p>I got married in September of 2022 to my beautiful wife Marisela. Since then, we closed on our first house! Together we have two puppies, Max and Nymeria, and I wouldn't trade it for the world.
+                        My wife is my biggest supporter and has been a big help along my journey.
+                    </p>
+                </div>
+                <div className={props.cards}>
                     <img style={{height:"50%"}} src={code}/>
-                    <h4>I like to code</h4>
+                    <h4>Coding</h4>
                     <p>I have had a passion for technology since I was young. I began teaching myself some java at around age 13, and took off from there.
                         I can start coding and get lost in my work and spend hours doing it without getting bored. It's like solving a puzzle for me.
                     </p>
                 </div>
                 <div className={props.cards}>
                     <img style={{height:"50%"}} src={gaming}/>
-                    <h4>I like gaming</h4>
+                    <h4>Gaming</h4>
                     <p>I think my love for coding and my love for gaming go hand in hand. I discovered my passion for coding from playing MMORPGs when I was young. To this day, 
                         I am still up to date on a lot of the popular games and enjoy playing in my free time.
                     </p>
                 </div>
                 <div className={props.cards}>
                     <img style={{height:"50%"}} src={working}/>
-                    <h4>I like to work</h4>
+                    <h4>Work</h4>
                     <p>I have a strong work ethic when doing work that I enjoy. Like I said, I can go hours and hours coding without getting bored. It keeps my brain and fingers busy, which is good
                         for me! Working out problems as they come is what I do best.
-                    </p>
-                </div>
-                <div className={props.cards}>
-                    <img style={{height:"50%"}} src={family}/>
-                    <h4>I'm a family man</h4>
-                    <p>I got married in September of 2022 to my beautiful wife Marisela. Since then, we closed on our first house! Together we have two puppies, Max and Nymeria, and I wouldn't trade it for the world.
-                        My wife is my biggest supporter and has been a big help along my journey.
                     </p>
                 </div>
             </div>
@@ -49,13 +49,13 @@ export const About = (props) => {
                 </p>
             </div>
             <div className={props.skillCards}>
-                <h4>My Skills :</h4>
+                <h4>My Applicable Skills:</h4>
                 <ul>
-                    <li>HTML/CSS/Bootstrap</li>
-                    <li>Vanilla JavaScript</li>
-                    <li>React</li>
-                    <li>NextJS</li>
-                    <li>UI/UX Design</li>
+                    <li>Version Control with Github - Check out my repos <a >here</a></li>
+                    <li>Vanilla JavaScript : familiar with OOP and other important JS concepts</li>
+                    <li>Worked with both React Library and NextJS Framework</li>
+                    <li>UI/UX Design and wireframing with Figma</li>
+                    <li>For a full view of my history/skills, please view <a>my current Résumé</a></li>
                 </ul>
             </div>
         </div>

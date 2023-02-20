@@ -38,6 +38,7 @@ export function Portfolio() {
       console.log('Something went wrong...');
     }
   }
+  
   var containerClassName = "container-" + theme;
   var aboutContainerClassName = "about-section-" + theme;
   var aboutButton = "navbox-home-" + theme;
