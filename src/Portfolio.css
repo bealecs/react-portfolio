@@ -21,6 +21,7 @@ p {
     background-color: #003249;
     position: fixed;
     top: 0;
+    z-index: 1;
   }
   .nav-container-light {
     display: flex;
@@ -28,9 +29,11 @@ p {
     justify-content: center;
     border-bottom: 2px solid #46494C;
     background-color: #80CED7;
+    position: fixed;
+    top: 0;
   }
 .container-dark{
-    background-color: #2B2D2E;
+    
     background-size: contain;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
@@ -205,20 +208,20 @@ h2.about {
     margin-top: 25px;
 }
 .projects-background-dark {
-    background-color: #38565D;
+    background-color: #008AB8;
 }
 .projects-background-light {
     background-color: #BEE5BF;
 }
 .starter-h2-dark {
-    color: black;
+    color: #CCDBDC;
     margin: auto;
     line-height: 2.5rem;
     padding: 3%;
     font-size: 1.7rem;
     margin-bottom: 3%;
-    width: 70%;
-    background-color: #38565D;
+    text-align: center;
+    background-color: #008AB8;
 }
 .starter-h2-light {
     color: #46494C;
@@ -311,7 +314,7 @@ img.profile-img:hover {
     width: fit-content;
     border-radius: 10%;
     color: #007EA7;
-    border: 2px solid #007EA7;
+    border: 2px solid yellow;
     cursor: pointer;
 }
 .navbox-home-dark{
@@ -335,7 +338,7 @@ img.profile-img:hover {
     border-radius: 10%;
     color: #007EA7;
     cursor: pointer;
-    border: 2px solid #007EA7;
+    border: 2px solid yellow;
 }
 .navbox-home-light{
     padding: 1%;
@@ -445,18 +448,14 @@ button.slick-arrow.slick-prev {
     border-radius: 50%;
 }
 .about-section-dark {
-    background-color: #5B6E5C;
+    background-color: #896A67;
     color: #EFC88B;
-    width: 75%;
-    z-index: 1;
+    width: 95%;
     margin: auto;
-    position: relative;
 }
 .about-section-light {
     background-color: #FFD1BA;
     color: #46494C;
-    width: 75%;
-    z-index: 1;
     margin: auto;
     position: relative;
     border-radius: 5%;
@@ -513,9 +512,9 @@ button.slick-arrow.slick-prev {
 }
 .about-message-dark > .about-cards-dark {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: fit-content;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 50vw;
     height: fit-content;
 }
 .about-message-light > .about-cards-light {
@@ -526,9 +525,9 @@ button.slick-arrow.slick-prev {
     height: fit-content;
 }
 .outro-dark {
-    padding: 7%;
+    padding: 5%;
     line-height: 2.5rem;
-    color: #EFC88B;
+    color: #CCDBDC;
     width: 70%;
     margin: auto;
 }
@@ -640,12 +639,19 @@ button.slick-arrow.slick-prev {
     line-height: 2.4rem;
     margin: auto;
 }
+.footer-arrow-dark {
+    color: #CCDBDC;
+}
+.footer-arrow-dark h1 {
+    font-size: 3rem;
+    cursor: pointer;
+}
 .footer-dark {
     text-align: center;
-    margin-top: 1%;
+    
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #2B2D2E;
+    background-color: #003249;
     color: #EFC88B;
     position: relative;
 }
@@ -657,9 +663,9 @@ button.slick-arrow.slick-prev {
     color: #46494C;
     position: relative;
 }
-.footer-dark > h4 {
-    color: #EFC88B;
-    font-size: 1.5rem;
+.footer-dark h4 {
+    color: #CCDBDC;
+    font-size: 1rem;
     padding: 2%;
 }
 .footer-light > h4 {
@@ -679,16 +685,21 @@ button.slick-arrow.slick-prev {
     background-color: black;
     border: 2px solid black;
 }
-.footer-icons > .social-icon:hover {
+.footer-icons .social-icon:hover {
     border-radius: 50%;
+    border: 2px solid yellow;
+}
+label {
+    font-weight: bold;
+    font-size: larger;
 }
 .feedback-dark {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 2%;
-    background-color: #2B2D2E;
-    color: #EFC88B;
+    background-color: #007EA7;
+    color: #CCDBDC;
 }
 .feedback-light {
     display: flex;
@@ -719,7 +730,7 @@ button.slick-arrow.slick-prev {
     border-radius: 10px;
     height: 75px;
     margin-top: 5%;
-    background-color: #38565D;
+    background-color: #CCDBDC;
     border: none;
 }
 .submit-feedback-light {
@@ -732,8 +743,9 @@ button.slick-arrow.slick-prev {
     background-color: #F9F6EE;
 }
 .submit-feedback-dark:hover {
-    border: 2px solid #EFC88B;
-    color: #EFC88B;
+    border: 2px solid yellow;
+    color: #007EA7;
+    font-weight: bold;
 }
 @media only screen and (max-width: 1500px) {
     .about-section-dark {

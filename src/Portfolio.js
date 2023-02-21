@@ -58,6 +58,7 @@ export function Portfolio() {
   var outro = "outro-" + theme;
   var navContainer = "nav-container-" + theme;
   var footerTheme = "footer-" + theme;
+  var footerArrow = "footer-arrow-" + theme;
   var feedbackTheme = "feedback-" + theme;
   var submitFeedback = "submit-feedback-" + theme;
   var starterMessage = "starter-h2-" + theme;
@@ -87,7 +88,7 @@ export function Portfolio() {
         />
       {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
-      <Footer footer={footerTheme}/> 
+      <Footer footer={footerTheme} className1={footerArrow}/> 
     </div>
     
   )

@@ -27,7 +27,7 @@ export const Landing = (props) => {
                     <br/> 
                     <h1 
                         style={{margin:'auto', fontSize:'4.5rem', color:'#CCDBDC', cursor:'pointer'}} 
-                        onClick={() => window.scrollTo(0, 1000)}>⇓</h1>
+                        onClick={() => window.scrollTo(0, 900)}>⇓</h1>
                 </h3>
             </div>
         </>
