@@ -2,7 +2,6 @@ import React from "react";
 import './Portfolio.css';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
-import SimpleSlider from "./Carousel";
 import ProjectSlider from "./ProjectsCarousel";
 import { About } from "./About";
 import { FeedbackForm } from "./Feedback";
@@ -63,7 +62,9 @@ export function Portfolio() {
   var submitFeedback = "submit-feedback-" + theme;
   var starterMessage = "starter-h2-" + theme;
   var projBackground = "projects-background-" + theme;
-  const typewriter = "typewriter-" + theme;
+  var typewrite = "typewriter-" + theme;
+  var para = "para-" + theme;
+  var arrowDown = "arrow-down-" + theme;
   
   return (
     <div className={containerClassName}>
@@ -84,9 +85,10 @@ export function Portfolio() {
         className2={welcomeThemeGoal}
         className5={name}
         className6={img}
-        className7={typewriter}
+        className7={typewrite}
+        className8={arrowDown}
         />
-      {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards}/>}
+      {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards} para={para}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
       <Footer footer={footerTheme} className1={footerArrow}/> 
     </div>

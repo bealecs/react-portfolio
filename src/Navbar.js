@@ -5,13 +5,11 @@ import './Portfolio.css';
 export const Navbar = (props) => {
     
     const logo = require("./logo.png")
-    const Capitalize = (str) => {
-        return str.charAt(0).toUpperCase() + str.slice(1);
-    }
+    
     return (
         <div className={props.navContainer}>
             <div className="logo-flex">
-                <img src={logo} alt="a logo for my portfolio that says Clif Codes" />
+                <img src={logo} style={{cursor:'pointer'}} onClick={() => window.scrollTo(0, 0)} alt="a logo for my portfolio that says Clif Codes" />
             </div>
             <div className={props.className}>
                 <div className={props.className3} onClick={props.home}>About

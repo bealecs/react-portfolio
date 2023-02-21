@@ -16,7 +16,7 @@ export const Landing = (props) => {
                 <div className={props.className7}>
                     <Typewriter
                         options={{
-                        strings: ['Husband', 'Web Developer', 'Problem Solver' , 'Doggie Dad x2', 'Gamer', 'Snowboarder'],
+                        strings: ['Husband', 'Web Developer', 'Veteran', 'Problem Solver' , 'Doggie Dad x2', 'Gamer', 'Snowboarder'],
                         autoStart: true,
                         loop: true,
                         }}
@@ -26,7 +26,7 @@ export const Landing = (props) => {
                     <br/>
                     <br/> 
                     <h1 
-                        style={{margin:'auto', fontSize:'4.5rem', color:'#CCDBDC', cursor:'pointer'}} 
+                        className={props.className8} 
                         onClick={() => window.scrollTo(0, 900)}>⇓</h1>
                 </h3>
             </div>
