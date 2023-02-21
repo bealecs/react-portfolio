@@ -62,6 +62,7 @@ export function Portfolio() {
   var submitFeedback = "submit-feedback-" + theme;
   var starterMessage = "starter-h2-" + theme;
   var projBackground = "projects-background-" + theme;
+  const typewriter = "typewriter-" + theme;
   
   return (
     <div className={containerClassName}>
@@ -82,6 +83,7 @@ export function Portfolio() {
         className2={welcomeThemeGoal}
         className5={name}
         className6={img}
+        className7={typewriter}
         />
       {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>

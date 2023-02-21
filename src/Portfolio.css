@@ -19,12 +19,15 @@ p {
     width: 100%;
     border-bottom: 2px solid #CCDBDC;
     background-color: #003249;
+    position: fixed;
+    top: 0;
   }
   .nav-container-light {
     display: flex;
     width: 100%;
     justify-content: center;
     border-bottom: 2px solid #46494C;
+    background-color: #80CED7;
   }
 .container-dark{
     background-color: #2B2D2E;
@@ -57,13 +60,26 @@ p {
     display: flex;
     flex-direction: column;
 }
-.typewriter {
+.typewriter-dark {
     margin: auto;
     color: #CCDBDC;
     font-size: 1.8rem;
 }
+.typewriter-light {
+    margin: auto;
+    color: black;
+    font-size: 1.8rem;
+}
 .landing-container-dark {
     background-color: #007EA7;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4%;
+}
+.landing-container-light {
+    background-color: #47D1FF;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -82,7 +98,7 @@ p {
     flex-wrap: nowrap;
     justify-content: flex-end;
     width: 100%;
-    background-color: #DFF3E3;
+    background-color: #80CED7;
 }
 .welcome-container h2 {
     text-align: center;
@@ -166,12 +182,13 @@ h1.name-light {
     padding: 2%;
     margin-top: 1%;
     font-size: 50px;
-    color: #46494C;
+    color: black;
+    text-align: center;
 }
 h3.goal-dark {
     padding: 3%;
     margin-top: 1%;
-    font-size: 22px;
+    font-size: 1.4rem;
     height: fit-content;
     color: #CCDBDC;
     text-align: center;
@@ -179,9 +196,10 @@ h3.goal-dark {
 h3.goal-light {
     padding: 3%;
     margin-top: 1%;
-    font-size: 22px;
+    font-size: 1.4rem;
     border-left: 2px solid #46494C;
     height: fit-content;
+    text-align: center;
 }
 h2.about {
     margin-top: 25px;
@@ -230,9 +248,9 @@ img.profile-dark {
     margin-top: 2%;
 }
 img.profile-light {
-    margin: 1%;
+    margin: auto;
+    margin-top: 2%;
     border-radius: 50%;
-    position: relative;
 }
 .project-message {
     color: #EFC88B;
