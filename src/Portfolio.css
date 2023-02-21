@@ -181,7 +181,6 @@ h1.name-dark {
 }
 h1.name-light {
     padding: 2%;
-    margin-top: 1%;
     font-size: 50px;
     color: black;
     text-align: center;
@@ -529,6 +528,10 @@ button.slick-arrow.slick-prev {
 }
 .para-dark {
     color: #CCDBDC;
+    margin-top: 2%;
+}
+.para-light {
+    color: black;
     margin-top: 2%;
 }
 .about-message-dark > .about-cards-dark {
