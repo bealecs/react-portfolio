@@ -6,6 +6,7 @@ import SimpleSlider from "./Carousel";
 import ProjectSlider from "./ProjectsCarousel";
 import { About } from "./About";
 import { FeedbackForm } from "./Feedback";
+import { Landing } from "./Landing";
 
 export function Portfolio() {
   const [NavState, setNavState] = React.useState(false);
@@ -44,6 +45,7 @@ export function Portfolio() {
   var aboutButton = "navbox-home-" + theme;
   var projectsButton = "navbox-" + theme;
   var welcomeTheme = "welcome-container-" + theme;
+  var landingTheme = "landing-container-" + theme;
   var welcomeThemeGoal = "goal-" + theme;
   var buttonTheme = "theme-" + theme;
   var name = "name-" + theme;
@@ -64,13 +66,10 @@ export function Portfolio() {
   return (
     <div className={containerClassName}>
       <div className="header-container">
-        <Navbar 
+        <Navbar
           className={welcomeTheme}
-          className2={welcomeThemeGoal} 
           className3={aboutButton} 
           className4={projectsButton}
-          className5={name}
-          className6={img}
           className7={themer} 
           home={handleClick2}
           projects={handleClick} 
@@ -78,6 +77,12 @@ export function Portfolio() {
           themeSetting={theme}
           navContainer={navContainer}/>
       </div>
+      <Landing 
+        className1={landingTheme}
+        className2={welcomeThemeGoal}
+        className5={name}
+        className6={img}
+        />
       {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
       <Footer footer={footerTheme}/> 

@@ -13,11 +13,12 @@ p {
     padding-right: 5%;
   }
   .nav-container-dark {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     width: 100%;
-    height: fit-content;
-    justify-content: center;
-    border-bottom: 2px solid #EFC88B;
+    border-bottom: 2px solid #CCDBDC;
+    background-color: #003249;
   }
   .nav-container-light {
     display: flex;
@@ -52,19 +53,34 @@ p {
     width: 20%;
     margin: 2% 1%;
 }
+.landing-div {
+    display: flex;
+    flex-direction: column;
+}
+.typewriter {
+    margin: auto;
+    color: #CCDBDC;
+    font-size: 1.8rem;
+}
+.landing-container-dark {
+    background-color: #007EA7;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .welcome-container-dark {
-    color: white;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
-    background-color: #2B2D2E;
+    background-color: #003249;
 }
 .welcome-container-light {
     color: #46494C;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
     background-color: #DFF3E3;
 }
@@ -142,9 +158,9 @@ section.body {
 }
 h1.name-dark {
     padding: 2%;
-    margin-top: 1%;
     font-size: 50px;
-    color: #EFC88B;
+    color: #CCDBDC;
+    text-align: center;
 }
 h1.name-light {
     padding: 2%;
@@ -156,9 +172,9 @@ h3.goal-dark {
     padding: 3%;
     margin-top: 1%;
     font-size: 22px;
-    border-left: 2px solid #EFC88B;
     height: fit-content;
-    color: rgb(239, 200, 139);
+    color: #CCDBDC;
+    text-align: center;
 }
 h3.goal-light {
     padding: 3%;
@@ -177,7 +193,7 @@ h2.about {
     background-color: #BEE5BF;
 }
 .starter-h2-dark {
-    color: #EFC88B;
+    color: black;
     margin: auto;
     line-height: 2.5rem;
     padding: 3%;
@@ -188,7 +204,6 @@ h2.about {
 }
 .starter-h2-light {
     color: #46494C;
-    
     margin: auto;
     line-height: 2.5rem;
     padding: 3%;
@@ -210,9 +225,9 @@ a {
 }
 
 img.profile-dark {
-    margin: 1%;
     border-radius: 50%;
-    position: relative;
+    margin: auto;
+    margin-top: 2%;
 }
 img.profile-light {
     margin: 1%;
@@ -245,13 +260,15 @@ img.profile-img:hover {
 }
 
 .navbox-dark {
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
-    background-color: #38565D;
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.5rem;
     height: fit-content;
-    color: rgb(239, 200, 139, 0.9);
+    background-color: #CCDBDC;
+    width: fit-content;
+    color: black;
     border-radius: 10%;
+    border: 2px solid black;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .flexing {
@@ -262,8 +279,6 @@ img.profile-img:hover {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    justify-content: space-evenly;
-    width: 60%;
 }
 .nav-buttons-div div {
    padding: 3%;
@@ -272,40 +287,42 @@ img.profile-img:hover {
     padding: 3%;
 }
 .navbox-dark:hover {
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
-    background-color: #38565D;
+    font-size: 1.5rem;
+    height: fit-content;
+    background-color: #CCDBDC;
     width: fit-content;
     border-radius: 10%;
-    color: #EFC88B;
+    color: #007EA7;
+    border: 2px solid #007EA7;
     cursor: pointer;
 }
 .navbox-home-dark{
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
-    background-color: #38565D;
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.5rem;
+    background-color: #CCDBDC;
     height: fit-content;
     width: fit-content;
-    color: rgb(239, 200, 139, 0.9);
+    color: black;
     border-radius: 10%;
+    border: 2px solid black;
     position: relative;
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-home-dark:hover {
-    padding: 2%;
-    margin: 5%;
-    background-color: #38565D;
+    font-size: 1.5rem;
+    height: fit-content;
+    background-color: #CCDBDC;
     width: fit-content;
     border-radius: 10%;
-    color: #EFC88B;
+    color: #007EA7;
     cursor: pointer;
+    border: 2px solid #007EA7;
 }
 .navbox-home-light{
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin: 1%;
     background-color: #F9F6EE;
     height: fit-content;
     width: fit-content;
@@ -315,9 +332,9 @@ img.profile-img:hover {
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-home-light:hover{
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin: 1%;
     background-color: #F9F6EE;
     height: fit-content;
     width: fit-content;
@@ -328,9 +345,9 @@ img.profile-img:hover {
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-light {
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin: 1%;
     background-color: #F9F6EE;
     height: fit-content;
     width: fit-content;
@@ -340,9 +357,9 @@ img.profile-img:hover {
     transition: background-color 0.2s, width ease-out 0.4s;
 }
 .navbox-light:hover{
-    padding: 2%;
-    font-size: 28px;
-    margin: 5%;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin: 1%;
     background-color: #F9F6EE;
     height: fit-content;
     width: fit-content;
@@ -382,19 +399,18 @@ section.about {
 }
 .themer-dark {
     border-radius: 40%;
-    margin: 4%;
+    margin: 1%;
     height: fit-content;
     border: none;
     padding: none;
-    font-size: 4rem;
-
+    font-size: 3rem;
 }
 .themer-light {
     border-radius: 40%;
-    margin: 4%;
+    margin: 1%;
     height: fit-content;
     border: none;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .themer-dark:hover {
     cursor: pointer;
@@ -637,7 +653,7 @@ button.slick-arrow.slick-prev {
     display: flex;
     margin: 2%;
     margin-bottom: 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 1%;
 }
 .footer-icons > .social-icon {
@@ -686,6 +702,7 @@ button.slick-arrow.slick-prev {
     height: 75px;
     margin-top: 5%;
     background-color: #38565D;
+    border: none;
 }
 .submit-feedback-light {
     margin: auto;
@@ -693,9 +710,13 @@ button.slick-arrow.slick-prev {
     border-radius: 10px;
     height: 75px;
     margin-top: 5%;
+    border: none;
     background-color: #F9F6EE;
 }
-
+.submit-feedback-dark:hover {
+    border: 2px solid #EFC88B;
+    color: #EFC88B;
+}
 @media only screen and (max-width: 1500px) {
     .about-section-dark {
         margin-top: 2%;
