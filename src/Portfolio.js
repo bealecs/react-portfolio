@@ -2,7 +2,7 @@ import React from "react";
 import './Portfolio.css';
 import {Navbar} from './Navbar'
 import {Footer} from './Footer';
-import ProjectSlider from "./ProjectsCarousel";
+import { ProjectsCarousel } from "./ProjectsCarousel";
 import { About } from "./About";
 import { FeedbackForm } from "./Feedback";
 import { Landing } from "./Landing";
@@ -21,7 +21,9 @@ export function Portfolio() {
   const handleClick = () => {
     if (!NavState) {
       setNavState(true);
+      window.scrollTo(0, 900);
     } else if (NavState) {
+      window.scrollTo(0, 900);
       console.log('already showing projects..');
     } else {
       alert('Something went wrong...');
@@ -31,7 +33,9 @@ export function Portfolio() {
   const handleClick2 = () => {
     if (NavState) {
       setNavState(false);
+      window.scrollTo(0, 900);
     } else if (!NavState) {
+      window.scrollTo(0, 900);
       console.log('already showing the home page...');
     } else {
       alert('Something went wrong...');
@@ -39,6 +43,7 @@ export function Portfolio() {
     }
   }
   
+  var aboutBackground = "about-background-" + theme;
   var containerClassName = "container-" + theme;
   var aboutContainerClassName = "about-section-" + theme;
   var aboutButton = "navbox-home-" + theme;
@@ -46,7 +51,6 @@ export function Portfolio() {
   var welcomeTheme = "welcome-container-" + theme;
   var landingTheme = "landing-container-" + theme;
   var welcomeThemeGoal = "goal-" + theme;
-  var buttonTheme = "theme-" + theme;
   var name = "name-" + theme;
   var img = "profile-" + theme;
   var themer = "themer-" + theme;
@@ -60,12 +64,13 @@ export function Portfolio() {
   var footerArrow = "footer-arrow-" + theme;
   var feedbackTheme = "feedback-" + theme;
   var submitFeedback = "submit-feedback-" + theme;
-  var starterMessage = "starter-h2-" + theme;
   var projBackground = "projects-background-" + theme;
   var typewrite = "typewriter-" + theme;
   var para = "para-" + theme;
   var arrowDown = "arrow-down-" + theme;
-  
+  var projectCards = "project-cards-" + theme;
+  var mainProject = "main-project-" + theme;
+
   return (
     <div className={containerClassName}>
       <div className="header-container">
@@ -88,7 +93,7 @@ export function Portfolio() {
         className7={typewrite}
         className8={arrowDown}
         />
-      {NavState ? <ProjectSlider outro={outro} background={projBackground} className={aboutContainerClassName} className2={buttonTheme} starter={starterMessage}/> : <About className={aboutContainerClassName} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards} para={para}/>}
+      {NavState ? <ProjectsCarousel outro={outro} background={projBackground} projectCards={projectCards} mainProject={mainProject} /> : <About className={aboutContainerClassName} aboutBackground={aboutBackground} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards} para={para}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
       <Footer footer={footerTheme} className1={footerArrow}/> 
     </div>

@@ -25,9 +25,9 @@ export const Landing = (props) => {
                 <h3 className={props.className2}>#VetsWhoCode 
                     <br/>
                     <br/> 
-                    <h1 
+                    <span 
                         className={props.className8} 
-                        onClick={() => window.scrollTo(0, 900)}>⇓</h1>
+                        onClick={() => window.scrollTo(0, 900)}>⇓</span>
                 </h3>
             </div>
         </>
