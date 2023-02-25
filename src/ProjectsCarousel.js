@@ -21,7 +21,7 @@ export const ProjectsCarousel = (props) => {
           </div>
         </div>
         <h2 className={props.outro}>Since I started learning, I've had high hopes. Becoming a member of the Vets Who Code group is a huge step in the right direction for me. I have been diving deep into learning 
-          different frameworks and just learning with what was out there. In the future, I hope to integrate more AI into my work for productivity purposes. All in all, I am very
+          different frameworks and just learning with what was out there. In the future, I hope to integrate more AI into my work in order to assist and amplify my skills. All in all, I am very
           excited to see where this road takes me. Thank you for checking out my page!
         </h2>
       </div>

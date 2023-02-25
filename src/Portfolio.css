@@ -231,6 +231,14 @@ h2.about {
     width: 80%;
     margin-top: 2%;
 }
+.main-project-light {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2%;
+    width: 80%;
+    margin-top: 2%;
+}
 .project-cards-dark {
     background-color: #005C7A;
     text-align: center;
@@ -257,21 +265,14 @@ h2.about {
 .project-cards-light:hover {
     box-shadow: yellow 2px 2px 14px 0px;
 }
-.main-project-light {
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    padding: 2%;
-    width: 80%;
-    margin-top: 2%;
-}
+
 .projects-background-dark {
     background-color: #008AB8;
     padding-top: 2%;
     
 }
 .projects-background-light {
-    padding-top: 5%;
+    padding-top: 2%;
     background-color: #85E0FF;
 }
 .projects-background-dark h2 {
@@ -715,6 +716,9 @@ button.slick-arrow.slick-prev {
     line-height: 2.4rem;
     margin: auto;
 }
+.footer-logo {
+    cursor: pointer;
+}
 .footer-arrow-dark {
     color: #CCDBDC;
 }
@@ -731,7 +735,6 @@ button.slick-arrow.slick-prev {
 }
 .footer-dark {
     text-align: center;
-    
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: #003249;
@@ -791,7 +794,6 @@ label {
     padding: 2%;
     background-color: #47D1FF;
     color: black;
-    border-top: 2px solid black;
 }
 .feedback-box {
     margin: auto;

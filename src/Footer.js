@@ -12,7 +12,7 @@ export function Footer(props) {
             
             <div className="footer-icons">
                 <div>
-                    <img src={logo} alt="Clif Codes logo"/>
+                    <img src={logo} onClick={() => window.scrollTo(0, 0)} className="footer-logo" alt="Clif Codes logo"/>
                 </div>
                 <div>
                     <h4 style={{marginBottom:'10%'}}>View my LinkedIn Profile</h4>
