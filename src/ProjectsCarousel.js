@@ -2,8 +2,8 @@ import React from "react";
 
 export const ProjectsCarousel = (props) => {
 
-  const pips = require("./pipswithpaul.png");
-  const catalog = require("./clifscatalog.png");
+  const pips = require("./pipswithpaul.webp");
+  const catalog = require("./clifscatalog.webp");
 
     return (
       <div className={props.background}>

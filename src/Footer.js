@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 
 export function Footer(props) {
    
-    const logo = require('./logo.png');
+    const logo = require('./logo.webp');
 
     return (
         <footer className={props.footer}>

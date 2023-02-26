@@ -3,8 +3,8 @@ import pdf from './resume.pdf';
 
 export const About = (props) => {
 
-    const chart = require("./chart.png");
-    const collage = require('./collage.JPG')
+    const chart = require("./chart.webp");
+    const collage = require('./collage.webp')
 
     return (
         <>

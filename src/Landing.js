@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 export const Landing = (props) => {
 
-    const logo = require('./logo512.jpg');
+    const logo = require('./logo512.webp');
     
     return (
         <>

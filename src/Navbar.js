@@ -4,7 +4,7 @@ import './Portfolio.css';
 
 export const Navbar = (props) => {
     
-    const logo = require("./logo.png")
+    const logo = require("./logo.webp")
     
     return (
         <div className={props.navContainer}>
