@@ -11,13 +11,21 @@ export const ProjectsCarousel = (props) => {
         <div className={props.mainProject}>
           <div className={props.projectCards}>
             <h4>Pips With Paul</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-            <img style={{width:'90%', padding:"2%"}} src={pips} alt="screenshot of my website Pips With Paul"/>
+            <p>I offered a friend my services to create a website for him. My friend, Paul, teaches his students how to navigate the Forex trading market to be successful. This project
+                uses NextJS, Firebase for authentication & firestore, and Stripe to integrate subscription based plans for his students. While it has proven challenging venturing into new
+                frameworks and libraries, it is always fun to learn new things.<br></br><br></br>
+                Check out the site <a href="https://pipswithpaul.vercel.app" target="_blank" rel="noopener noreferrer" style={{fontWeight:"bold", textDecoration:'underline', cursor:'pointer'}}>here</a> 
+            </p>
+            <img style={{padding:"2%", alignItems:'center'}} src={pips} alt="screenshot of my website Pips With Paul"/>
           </div>
           <div className={props.projectCards}>
             <h4>Clif's Catalog</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-            <img style={{width:'90%', padding:'2%'}} src={catalog} alt="screenshot of my website clif's catalog"/>
+            <p>This project started out as a random meal generator, and then I decided I wanted to go a little further. Now, you can not only generate random meals, but you can also
+                search for different meals by individual categories. This project was created mainly using React JS. Utilizes TheMealDB API for the meal content. My favorite thing about this
+                project is still the random meal generator, though.<br></br><br></br>
+                Check out the site <a href="https://clifscatalog.netlify.app" target="_blank" rel="noopener noreferrer" style={{fontWeight:"bold", textDecoration:'underline', cursor:'pointer'}}>here</a> 
+            </p>
+            <img style={{padding:'2%', alignItems:'center'}} src={catalog} alt="screenshot of my website clif's catalog"/>
           </div>
         </div>
         <h2 className={props.outro}>Since I started learning, I've had high hopes. Becoming a member of the Vets Who Code group is a huge step in the right direction for me. I have been diving deep into learning 

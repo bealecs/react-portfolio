@@ -2,8 +2,7 @@ import React from "react";
 import pdf from './resume.pdf';
 
 export const About = (props) => {
-
-    const chart = require("./chart.webp");
+    
     const collage = require('./collage.webp')
 
     return (
@@ -16,7 +15,6 @@ export const About = (props) => {
                     <img src={collage} alt="collage of photos from my life - includes pictures of my wife (Marisela) and me"/>
                 </div>
                 <div>
-                    <img style={{width:'750px'}} src={chart} alt="Pie chart representing how I spend my time"/>
                     <p className={props.para}>I value my wife and puppies more than anything. I play hard, and work even harder. Most of my time is spent either with my wife, Marisela, working, or developing.</p>
                 </div>
             </div>
