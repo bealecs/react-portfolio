@@ -10,7 +10,7 @@ export const Landing = (props) => {
         <>
             <div className={props.className1}>
                 <div className="landing-div">
-                <img src={logo} alt='profile-img' className={props.className6} style={{width: 300, height: 300}}/>
+                <img src={logo} alt='Clifton Beale' className={props.className6} style={{width: 300, height: 300}}/>
                 <h1 className={props.className5}>Clifton Beale</h1>
                 </div>
                 <div className={props.className7}>

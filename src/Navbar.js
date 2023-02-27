@@ -9,7 +9,7 @@ export const Navbar = (props) => {
     return (
         <div className={props.navContainer}>
             <div className="logo-flex">
-                <img src={logo} style={{cursor:'pointer'}} onClick={() => window.scrollTo(0, 0)} alt="a logo for my portfolio that says Clif Codes" />
+                <img src={logo} style={{cursor:'pointer', width:'100%', margin:'3%'}} onClick={() => window.scrollTo(0, 0)} alt="a logo for my portfolio that says Clif Codes" />
             </div>
             <div className={props.className}>
                 <div className={props.className3} onClick={props.home}>About
