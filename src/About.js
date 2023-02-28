@@ -19,7 +19,7 @@ export const About = (props) => {
                 </div>
             </div>
             <div className={props.outro}>
-                <h2>I've come a long way</h2>
+                <h1 style={{marginBottom:'3%'}}>I've come a long way</h1>
                 <p>
                     For a little over a year now, I have really thrown my all at learning web development. My studies have leaned heavier towards the side of front-end development, but have not been limited to it.
                     It is my goal to grow each day, and #VetsWhoCode is helping to make that happen. #VetsWhoCode is a group of like-minded veterans that was built by veterans for veterans.

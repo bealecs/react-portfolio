@@ -837,7 +837,7 @@ label {
     height: 75px;
     margin-top: 5%;
     background-color: #CCDBDC;
-    border: none;
+    border: 2px solid #005C7A;
 }
 .submit-feedback-light {
     margin: auto;
@@ -845,7 +845,7 @@ label {
     border-radius: 10px;
     height: 75px;
     margin-top: 5%;
-    border: none;
+    border: 2px solid black;
     background-color: #F9F6EE;
 }
 .submit-feedback-dark:hover {
