@@ -102,6 +102,7 @@ p {
     color: black;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     justify-content: flex-end;
     width: 100%;
     background-color: #008AB8;
@@ -635,7 +636,7 @@ button.slick-arrow.slick-prev {
     padding-bottom: 5%;
     line-height: 2.5rem;
     color: #CCDBDC;
-    width: 70%;
+    width: 60%;
     margin: auto;
     margin-top: 3%;
 }
@@ -645,12 +646,13 @@ button.slick-arrow.slick-prev {
 }
 .outro-dark p {
     font-size: 20px;
+    text-align: left;
 }
 .outro-light {
     padding-bottom: 5%;
     line-height: 2.5rem;
     color: black;
-    width: 70%;
+    width: 60%;
     margin: auto;
     margin-top: 3%;
 }
@@ -660,16 +662,17 @@ button.slick-arrow.slick-prev {
 }
 .outro-light p {
     font-size: 20px;
+    text-align: left;
 }
 .skill-cards-dark {
-    width: 40%;
+    width: 60%;
     background-color: #005C7A;
     margin: auto;
     margin-bottom: 2%;
     border-radius: 10px;
 }
 .skill-cards-light {
-    width: 40%;
+    width: 60%;
     background-color: #00B8F5;
     margin: auto;
     margin-bottom: 2%;
@@ -715,12 +718,14 @@ button.slick-arrow.slick-prev {
     padding: 3%;
     margin-left: 10%;
     color: #CCDBDC;
+    text-align: left;
 }
 .skill-cards-light li {
     width: fit-content;
     height: fit-content;
     padding: 3%;
     margin-left: 10%;
+    text-align: left;
     color: black;
 }
 .about-message > p {
@@ -1094,6 +1099,24 @@ label {
         font-size: 1rem;
     }
     .navbox-home-dark {
+        font-size: 1rem;
+    }
+    .navbox-dark:hover {
+        font-size: 1rem;
+    }
+    .navbox-home-dark:hover {
+        font-size: 1rem;
+    }
+    .navbox-light {
+        font-size: 1rem;
+    }
+    .navbox-home-light {
+        font-size: 1rem;
+    }
+    .navbox-light:hover {
+        font-size: 1rem;
+    }
+    .navbox-home-light:hover {
         font-size: 1rem;
     }
 }
