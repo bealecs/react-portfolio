@@ -643,6 +643,7 @@ button.slick-arrow.slick-prev {
 .outro-dark h2 {
     margin-bottom: 2%;
     font-size: 26px;
+    text-align: left;
 }
 .outro-dark p {
     font-size: 20px;
@@ -659,6 +660,7 @@ button.slick-arrow.slick-prev {
 .outro-light h2 {
     margin-bottom: 2%;
     font-size: 26px;
+    text-align: left;
 }
 .outro-light p {
     font-size: 20px;
@@ -1000,6 +1002,12 @@ label {
      
 }
 @media only screen and (max-width: 500px) {
+    .arrow-down-dark {
+        display: none;
+    }
+    .arrow-down-light {
+        display: none;
+    }
     .skill-cards-dark {
         width: 90%;
     }
