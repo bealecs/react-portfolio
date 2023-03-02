@@ -73,22 +73,25 @@ export function Portfolio() {
     name: "name-" + theme,
     typewrite: "typewriter-" + theme,
     arrowDown: "arrow-down-" + theme
+  }
+
+  const projectClassNames = {
+    outro: "outro-" + theme,
+    projBackground: "projects-background-" + theme,
+    projectCards: "project-cards-" + theme,
+    mainProject: "main-project-" + theme
+  }
+
+  const footerClassNames = {
+    footerTheme: "footer-" + theme,
+    footerArrow: "footer-arrow-" + theme,
 
   }
-  var landingTheme = "landing-container-" + theme;
-  var welcomeThemeGoal = "goal-" + theme;
-  var name = "name-" + theme;
-  var img = "profile-" + theme;
-  var outro = "outro-" + theme;
-  var footerTheme = "footer-" + theme;
-  var footerArrow = "footer-arrow-" + theme;
-  var feedbackTheme = "feedback-" + theme;
-  var submitFeedback = "submit-feedback-" + theme;
-  var projBackground = "projects-background-" + theme;
-  var typewrite = "typewriter-" + theme;
-  var arrowDown = "arrow-down-" + theme;
-  var projectCards = "project-cards-" + theme;
-  var mainProject = "main-project-" + theme;
+  
+  const feedbackClassNames = {
+    feedbackTheme: "feedback-" + theme,
+    submitFeedback: "submit-feedback-" + theme
+  }
 
   return (
     <div className={containerClassName}>
@@ -99,12 +102,10 @@ export function Portfolio() {
           projects={handleClick} 
           theme={toggleTheme}/>
       </div>
-      <Landing 
-        className={landingClassNames}
-        />
-      {NavState ? <ProjectsCarousel outro={outro} background={projBackground} projectCards={projectCards} mainProject={mainProject} /> : <About className={aboutClassNames}/>}
-      <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
-      <Footer footer={footerTheme} className1={footerArrow}/> 
+      <Landing className={landingClassNames}/>
+      {NavState ? <ProjectsCarousel className={projectClassNames}/> : <About className={aboutClassNames}/>}
+      <FeedbackForm className={feedbackClassNames}/>
+      <Footer className={footerClassNames}/> 
     </div>
     
   )

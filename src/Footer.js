@@ -8,7 +8,7 @@ export function Footer(props) {
     const logo = require('./logo.webp');
 
     return (
-        <footer className={props.footer}>
+        <footer className={props.className.footerTheme}>
             
             <div className="footer-icons">
                 <div>
@@ -26,7 +26,7 @@ export function Footer(props) {
                     <h4 style={{marginBottom:'10%'}}>Send me a chat in Discord</h4>
                     <SocialIcon url="https://discordapp.com/users/Clif#6040" target="_blank" bgColor="white" className="social-icon" />
                 </div>
-                <div className={props.className1}>
+                <div className={props.className.footerArrow}>
                     <h4 style={{marginBottom:'10%'}}>Back to top of page</h4>
                     <h1 onClick={() => window.scrollTo(0, 0)}>⇑</h1>
                 </div>
