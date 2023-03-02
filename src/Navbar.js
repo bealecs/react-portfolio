@@ -4,8 +4,6 @@ import './Portfolio.css';
 
 export const Navbar = (props) => {
     
-    const logo = require("./logo.webp")
-    
     return (
         <div className={props.className.navContainer}>
             <div className={props.className.logoFlex}>

@@ -4,15 +4,13 @@ import { SocialIcon } from 'react-social-icons';
 
 
 export function Footer(props) {
-   
-    const logo = require('./logo.webp');
 
     return (
         <footer className={props.className.footerTheme}>
             
             <div className="footer-icons">
                 <div>
-                    <img src={logo} onClick={() => window.scrollTo(0, 0)} className="footer-logo" alt="Clif Codes logo"/>
+                    <h1 style={{fontFamily:'logo', fontSize:"4rem", color:"#F9F6EE", cursor:"pointer"}} onClick={() => window.scrollTo(0, 0)}>Clif Codes</h1>
                 </div>
                 <div>
                     <h4 style={{marginBottom:'10%'}}>View my LinkedIn Profile</h4>
