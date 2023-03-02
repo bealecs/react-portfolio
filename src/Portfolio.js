@@ -42,31 +42,50 @@ export function Portfolio() {
       console.log('Something went wrong...');
     }
   }
-  
-  var aboutBackground = "about-background-" + theme;
+
   var containerClassName = "container-" + theme;
-  var aboutContainerClassName = "about-section-" + theme;
-  var aboutButton = "navbox-home-" + theme;
-  var projectsButton = "navbox-" + theme;
-  var welcomeTheme = "welcome-container-" + theme;
+
+  const aboutClassNames = {
+    aboutBackground: "about-background-" + theme,
+    aboutContainerClassName: "about-section-" + theme,
+    outro: "outro-" + theme,
+    message: "about-message-" + theme,
+    aboutCards: "about-cards-" + theme,
+    cards: "cards-" + theme,
+    skillCards: "skill-cards-" + theme,
+    para: "para-" + theme
+  }
+
+  const navClassNames = {
+    welcomeTheme: "welcome-container-" + theme,
+    aboutButton: "navbox-home-" + theme,
+    projectsButton: "navbox-" + theme,
+    themer: "themer-" + theme,
+    theme: theme,
+    navContainer: "nav-container-" + theme,
+    logoFlex: "logo-flex-" + theme
+  }
+  
+  const landingClassNames = {
+    landingTheme: "landing-container-" + theme,
+    welcomeThemeGoal: "goal-" + theme,
+    img: "profile-" + theme,
+    name: "name-" + theme,
+    typewrite: "typewriter-" + theme,
+    arrowDown: "arrow-down-" + theme
+
+  }
   var landingTheme = "landing-container-" + theme;
   var welcomeThemeGoal = "goal-" + theme;
   var name = "name-" + theme;
   var img = "profile-" + theme;
-  var themer = "themer-" + theme;
-  var message = "about-message-" + theme;
-  var cards = "about-cards-" + theme;
-  var cards2 = "cards-" + theme;
-  var skillCards = "skill-cards-" + theme;
   var outro = "outro-" + theme;
-  var navContainer = "nav-container-" + theme;
   var footerTheme = "footer-" + theme;
   var footerArrow = "footer-arrow-" + theme;
   var feedbackTheme = "feedback-" + theme;
   var submitFeedback = "submit-feedback-" + theme;
   var projBackground = "projects-background-" + theme;
   var typewrite = "typewriter-" + theme;
-  var para = "para-" + theme;
   var arrowDown = "arrow-down-" + theme;
   var projectCards = "project-cards-" + theme;
   var mainProject = "main-project-" + theme;
@@ -75,25 +94,15 @@ export function Portfolio() {
     <div className={containerClassName}>
       <div className="header-container">
         <Navbar
-          className={welcomeTheme}
-          className3={aboutButton} 
-          className4={projectsButton}
-          className7={themer} 
+          className={navClassNames}
           home={handleClick2}
           projects={handleClick} 
-          theme={toggleTheme}
-          themeSetting={theme}
-          navContainer={navContainer}/>
+          theme={toggleTheme}/>
       </div>
       <Landing 
-        className1={landingTheme}
-        className2={welcomeThemeGoal}
-        className5={name}
-        className6={img}
-        className7={typewrite}
-        className8={arrowDown}
+        className={landingClassNames}
         />
-      {NavState ? <ProjectsCarousel outro={outro} background={projBackground} projectCards={projectCards} mainProject={mainProject} /> : <About className={aboutContainerClassName} aboutBackground={aboutBackground} outro={outro} message={message} aboutCards={cards} cards={cards2} skillCards={skillCards} para={para}/>}
+      {NavState ? <ProjectsCarousel outro={outro} background={projBackground} projectCards={projectCards} mainProject={mainProject} /> : <About className={aboutClassNames}/>}
       <FeedbackForm feedback={feedbackTheme} submitFeedback={submitFeedback}/>
       <Footer footer={footerTheme} className1={footerArrow}/> 
     </div>

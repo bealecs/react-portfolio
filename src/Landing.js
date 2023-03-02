@@ -8,12 +8,12 @@ export const Landing = (props) => {
     
     return (
         <>
-            <div className={props.className1}>
+            <div className={props.className.landingTheme}>
                 <div className="landing-div">
-                <img src={logo} alt='Clifton Beale' className={props.className6} style={{width: 300, height: 300}}/>
-                <h1 className={props.className5}>Clifton Beale</h1>
+                <img src={logo} alt='Clifton Beale' className={props.className.img} style={{width: 300, height: 300}}/>
+                <h1 className={props.className.name}>Clifton Beale</h1>
                 </div>
-                <div className={props.className7}>
+                <div className={props.className.typewrite}>
                     <Typewriter
                         options={{
                         strings: ['Husband', 'Web Developer', 'Veteran', 'Problem Solver' , 'Doggie Dad x2', 'Gamer', 'Snowboarder'],
@@ -22,11 +22,11 @@ export const Landing = (props) => {
                         }}
                     />
                 </div>
-                <h3 className={props.className2}>#VetsWhoCode 
+                <h3 className={props.className.welcomeThemeGoal}>#VetsWhoCode 
                     <br/>
                     <br/> 
                     <span 
-                        className={props.className8} 
+                        className={props.className.arrowDown} 
                         onClick={() => window.scrollTo(0, 900)}>⇓</span>
                 </h3>
             </div>
