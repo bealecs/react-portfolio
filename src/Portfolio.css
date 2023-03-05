@@ -847,6 +847,11 @@ label {
     background-color: #47D1FF;
     color: black;
 }
+.fback-label {
+    width: 50%;
+    margin: auto;
+    line-height: 2;
+}
 .feedback-box {
     margin: auto;
     margin-top: 2%;
@@ -855,7 +860,6 @@ label {
     line-height: 2;
     height: 7rem;
     overflow: hidden;
-    border: 2px solid black;
 }
 .feedback-box:focus:invalid {
     border: 2px solid red;

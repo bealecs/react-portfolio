@@ -32,7 +32,7 @@ export function FeedbackForm(props){
    
     return (
         <form onSubmit={handleSubmit} id="Feedback" className={props.className.feedbackTheme} autoComplete="off">
-        <label>If you took time to check out my portfolio today, and would like to get in touch directly, feel free to leave me a comment with some feedback. Thank you</label>
+        <label className="fback-label">If you took time to check out my portfolio today, and would like to get in touch directly, feel free to leave me a comment with some feedback. Thank you</label>
         <div className="feedback-flex">
         <label for="fname">Name:</label>
           <input id="fname"></input>
