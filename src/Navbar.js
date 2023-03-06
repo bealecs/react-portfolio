@@ -7,7 +7,7 @@ export const Navbar = (props) => {
     return (
         <div className={props.className.navContainer}>
             <div className={props.className.logoFlex}>
-                <h1 style={{fontFamily:'logo'}} onClick={() => window.scrollTo(0, 0)}>Clif Codes</h1>
+                <h1 style={{fontFamily:'monospace'}} onClick={() => window.scrollTo(0, 0)}>Clif Codes</h1>
             </div>
             <div className={props.className.welcomeTheme}>
                 <div className={props.className.aboutButton} onClick={props.home}>About
