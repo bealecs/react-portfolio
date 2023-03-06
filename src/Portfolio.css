@@ -26,6 +26,12 @@ p {
     font-size: 2rem;
     cursor: pointer;
   }
+  .logo-flex-dark h1 {
+    font-size: 3rem;
+  }
+  .logo-flex-light h1 {
+    font-size: 3rem;
+  }
   .nav-container-dark {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -46,6 +52,7 @@ p {
     background-color: #008AB8;
     position: fixed;
     top: 0;
+    align-items: center;
   }
 .container-dark{
     
@@ -289,6 +296,12 @@ h2.about {
     border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
+}
+.project-cards-light p {
+    color: black;
+}
+.project-cards-light h4 {
+    color: black;
 }
 .project-cards-dark:hover {
     box-shadow: yellow 2px 2px 14px 0px;
@@ -812,6 +825,9 @@ button.slick-arrow.slick-prev {
     font-size: 1rem;
     padding: 2%;
 }
+.footer-light h1 {
+    color: black;
+}
 .footer-icons {
     display: flex;
     margin: 2%;
@@ -895,6 +911,12 @@ label {
     font-weight: bold;
 }
 @media only screen and (max-width: 1500px) {
+    .logo-flex-dark h1 {
+        font-size: 2rem;
+    }
+    .logo-flex-light h1 {
+        font-size: 2rem;
+    }
     h2.outro-dark {
         font-size: 1.2rem;
     }
@@ -1038,6 +1060,18 @@ label {
      
 }
 @media only screen and (max-width: 500px) {
+    .themer-dark { 
+        font-size: 2rem;
+    }
+    .logo-flex-dark h1 {
+        font-size: 1rem;
+    }
+    .themer-light { 
+        font-size: 2rem;
+    }
+    .logo-flex-light h1 {
+        font-size: 1rem;
+    }
     .arrow-down-dark {
         display: none;
     }

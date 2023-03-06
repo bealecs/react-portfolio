@@ -7,7 +7,7 @@ export const About = (props) => {
 
     return (
         <>
-        <div className={props.className.aboutBackground}>
+        <div className={props.className.aboutBackground} id="about">
         <div className={props.className.message}>
             <h2 style={{fontWeight:'bold'}}>About me</h2>
             <div className={props.className.aboutCards}>

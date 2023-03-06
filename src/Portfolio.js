@@ -21,9 +21,9 @@ export function Portfolio() {
   const handleClick = () => {
     if (!NavState) {
       setNavState(true);
-      window.scrollTo(0, 900);
+      window.scrollTo(0, 880);
     } else if (NavState) {
-      window.scrollTo(0, 900);
+      window.scrollTo(0, 880);
       console.log('already showing projects..');
     } else {
       alert('Something went wrong...');
@@ -33,9 +33,9 @@ export function Portfolio() {
   const handleClick2 = () => {
     if (NavState) {
       setNavState(false);
-      window.scrollTo(0, 900);
+      window.scrollTo(0, 880);
     } else if (!NavState) {
-      window.scrollTo(0, 900);
+      window.scrollTo(0, 880);
       console.log('already showing the home page...');
     } else {
       alert('Something went wrong...');

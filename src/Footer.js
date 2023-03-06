@@ -10,7 +10,7 @@ export function Footer(props) {
             
             <div className="footer-icons">
                 <div>
-                    <h1 style={{fontFamily:'monospace', fontSize:"4rem", color:"#F9F6EE", cursor:"pointer"}} onClick={() => window.scrollTo(0, 0)}>Clif Codes</h1>
+                    <h1 style={{fontFamily:'monospace', fontSize:"4rem", cursor:"pointer"}} onClick={() => window.scrollTo(0, 0)}>Clif Codes</h1>
                 </div>
                 <div>
                     <h4 style={{marginBottom:'10%'}}>View my LinkedIn Profile</h4>
