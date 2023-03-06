@@ -10,7 +10,7 @@ export const PipsWithPaul = () => {
             <AdvancedNavbar />
             <div style={{backgroundColor:'#005C7A', height:'100%',minHeight:'90vh', display:'inline-flex', alignItems:'center', flexWrap:"wrap"}}>
                 <img src={pwpLogo} style={{borderRadius:'10%', width:'300px', height:'300px', margin:"1% auto"}} alt="Pips With Paul Logo"/>
-                <p style={{lineHeight:'2rem', color:'#CCDBDC', textAlign:"left",height:'100%',resize:'none'}}>I started Pips With Paul to really test my skillset at that time.
+                <p style={{lineHeight:'2rem', color:'#CCDBDC', textAlign:"left",height:'100%',resize:'none', margin:'0% 10%'}}>I started Pips With Paul to really test my skillset at that time.
                 I was starting to become familiar with React, but I had recently come across NextJS documentation and started reading. All it took was learning how NextJS handled routing, and I was hooked.
                 I read through a lot of the documentation to get started, and began Pips With Paul using typescript and NextJS. <br /> <br /> Since starting this project, I have hit a couple of road blocks & learning curves; luckily, there is a lot of good documentation for NextJS, and finally, the site is starting to come together - <br>
                 </br><br></br>You can now log in or create an account, which was handled through utilizing firebase authentication. Firebase's documentation also made it easy

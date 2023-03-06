@@ -910,11 +910,17 @@ label {
     color: #008AB8;
     font-weight: bold;
 }
+.footer-icons h1 {
+    font-size: 3rem;
+}
 @media only screen and (max-width: 1500px) {
     .logo-flex-dark h1 {
         font-size: 2rem;
     }
     .logo-flex-light h1 {
+        font-size: 2rem;
+    }
+    .footer-icons h1 {
         font-size: 2rem;
     }
     h2.outro-dark {
@@ -1060,6 +1066,9 @@ label {
      
 }
 @media only screen and (max-width: 500px) {
+    .footer-icons h1 {
+        font-size: 1rem;
+    }
     .themer-dark { 
         font-size: 2rem;
     }
