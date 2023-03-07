@@ -10,7 +10,7 @@ export const Resume = () => {
         <AdvancedNavbar />
             <div className="resume">
                 <img src={resume} alt="A screenshot copy of my up to date resume"/>
-                <a style={{textAlign:'center',cursor:"pointer"}}>Download a copy of Clif's Résumé</a>    
+                <a href="ClifsResume.pdf" download="ClifsResume.pdf" style={{textAlign:'center',cursor:"pointer"}}>Download a copy of Clif's Résumé</a>    
             </div>    
         </>
     )

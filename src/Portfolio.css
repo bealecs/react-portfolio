@@ -34,14 +34,15 @@ p {
   }
   .resume { 
     background-color: #005C7A;
+    background-size: cover;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
   }
   .resume img {
     margin: auto;
-    height: 800px;
-    aspect-ratio: 1;
+    height: 750px;
+    aspect-ratio: 0.9;
   }
   .nav-container-dark {
     display: inline-flex;

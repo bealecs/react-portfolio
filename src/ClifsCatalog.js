@@ -8,8 +8,8 @@ export const ClifsCatalog = () => {
     return (
         <>
             <AdvancedNavbar />
-            <div style={{backgroundColor:'#005C7A', minHeight:'93vh', height:'100%', display:'flex',flexwrap:'wrap', flexDirection:'column', alignItems:'center'}}>
-                <img src={cclogo} style={{borderRadius:'50%', width:'300px', height:'300px', margin:"2% auto"}} alt="logo for Clif's Catalog"/>
+            <div style={{backgroundColor:'#005C7A', minHeight:'90vh', height:'100%', display:'flex',flexwrap:'wrap', flexDirection:'column', alignItems:'center'}}>
+                <img src={cclogo} style={{borderRadius:'50%', width:'200px', height:'200px', margin:"2% auto"}} alt="logo for Clif's Catalog"/>
                 <p style={{lineHeight:'2rem', color:'#CCDBDC', textAlign:"left",height:'100%',resize:'none', margin:'2% 10%'}}>I started Clif's Catalog while I was completing a course offered through Codecademy for front-end web development.
                 <br /><br />
                 This course was an introduction to utilizing API's, and I came across 'TheMealDB' API. This site offered a database of around 1,000 different meals from all over the world for their free use of the API.

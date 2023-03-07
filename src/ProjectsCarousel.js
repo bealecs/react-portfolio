@@ -16,7 +16,7 @@ export const ProjectsCarousel = (props) => {
             <p>I offered a friend my services to create a website for him. My friend, Paul, teaches his students how to navigate the Forex trading market to be successful. This project
                 uses NextJS, Firebase for authentication & firestore, and Stripe to integrate subscription based plans for his students. While it has proven challenging venturing into new
                 frameworks and libraries, it is always fun to learn new things.<br></br><br></br>
-                Check out the site <a href="https://pipswithpaul.vercel.app" target="_blank" rel="noopener noreferrer" style={{fontWeight:"bold", textDecoration:'underline', cursor:'pointer'}}>here</a> 
+                Read more <a href="https://pipswithpaul.vercel.app" target="_blank" rel="noopener noreferrer" style={{fontWeight:"bold", textDecoration:'underline', cursor:'pointer'}}>here</a> 
             </p>
             <img style={{padding:"2%", alignItems:'center'}} src={pips} alt="screenshot of my website Pips With Paul"/>
             </Link>
