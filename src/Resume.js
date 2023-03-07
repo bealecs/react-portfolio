@@ -8,10 +8,12 @@ export const Resume = () => {
     return (
         <>
         <AdvancedNavbar />
+        <div className="resume-container">
             <div className="resume">
-                <img src={resume} alt="A screenshot copy of my up to date resume"/>
-                <a href="ClifsResume.pdf" download="ClifsResume.pdf" style={{textAlign:'center',cursor:"pointer", fontSize:"2rem"}}>Download a copy</a>    
-            </div>    
+                <a href="ClifsResume.pdf" download="ClifsResume.pdf" style={{textAlign:'center',cursor:"pointer", fontSize:"2rem"}}>Download a copy</a> 
+                <img src={resume} alt="A screenshot copy of my up to date resume"/> 
+            </div>
+        </div>    
         </>
     )
 }

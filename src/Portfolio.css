@@ -32,17 +32,23 @@ p {
   .logo-flex-light h1 {
     font-size: 3rem;
   }
-  .resume { 
+  .resume-container {
+    width: 100%;
     background-color: #005C7A;
-    background-size: cover;
-    min-height: 90vh;
+  }
+  .resume { 
+    min-height: 93vh;
     display: flex;
     flex-direction: column;
   }
   .resume img {
-    margin: auto;
-    height: 750px;
+    margin: 1% auto;
+    width: 40%;
     aspect-ratio: 0.9;
+  }
+  .resume a {
+    width: fit-content;
+    margin: 1% auto;
   }
   .nav-container-dark {
     display: inline-flex;
@@ -926,6 +932,9 @@ label {
     font-size: 3rem;
 }
 @media only screen and (max-width: 1500px) {
+    .resume img {
+        width: 50%;
+    }
     .logo-flex-dark h1 {
         font-size: 2rem;
     }
@@ -973,6 +982,9 @@ label {
     }
 }
 @media only screen and (max-width: 1000px) {
+    .resume img { 
+        width: 80%;
+    }
     .main-project-dark {
         flex-wrap: wrap;
         margin: auto;
