@@ -1075,9 +1075,36 @@ label {
         margin: 0;
         padding: 0;
     }
+    .navbox-dark {
+        font-size: 0.9rem;
+    }
+    .navbox-home-dark {
+        font-size: 0.9rem;
+    }
+    .navbox-dark:hover {
+        font-size: 0.9rem;
+    }
+    .navbox-home-dark:hover {
+        font-size: 0.9rem;
+    }
+    .navbox-light {
+        font-size: 0.9rem;
+    }
+    .navbox-home-light {
+        font-size: 0.9rem;
+    }
+    .navbox-light:hover {
+        font-size: 0.9rem;
+    }
+    .navbox-home-light:hover {
+        font-size: 0.9rem;
+    }
      
 }
 @media only screen and (max-width: 500px) {
+    .fback-label {
+        font-size: 1rem;
+    }
     .footer-icons h1 {
         font-size: 1rem;
     }
@@ -1195,28 +1222,28 @@ label {
         padding: 0;
     }
     .navbox-dark {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-home-dark {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-dark:hover {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-home-dark:hover {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-light {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-home-light {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-light:hover {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .navbox-home-light:hover {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 @media only screen and (max-width: 300px) {
