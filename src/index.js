@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PipsWithPaul } from './PipsWithPaul';
 import { ClifsCatalog } from './ClifsCatalog';
+import { Resume } from './Resume';
 
 export const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -15,6 +16,7 @@ root.render(
     <Route path="/" element={<App />} />
     <Route path='/pipswithpaul' element={<PipsWithPaul />} />
     <Route path='/clifscatalog' element={<ClifsCatalog />} />
+    <Route path='/resume' element={<Resume />} />
   </Routes>
   </BrowserRouter>
 );

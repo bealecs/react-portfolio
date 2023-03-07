@@ -32,6 +32,17 @@ p {
   .logo-flex-light h1 {
     font-size: 3rem;
   }
+  .resume { 
+    background-color: #005C7A;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .resume img {
+    margin: auto;
+    height: 800px;
+    aspect-ratio: 1;
+  }
   .nav-container-dark {
     display: inline-flex;
     flex-wrap: nowrap;

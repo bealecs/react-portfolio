@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from './resume.pdf';
+import { Link } from "react-router-dom";
 
 export const About = (props) => {
     
@@ -34,7 +34,7 @@ export const About = (props) => {
                     <li>Vanilla JavaScript : familiar with OOP and other important JS concepts</li>
                     <li>Experience with both React Library and NextJS Framework</li>
                     <li>Experience with UI/UX Design and wireframing with Figma</li>
-                    <li>For a full view of my history/skills, please view <a href={pdf} target="_blank" rel="noopener noreferrer" style={{fontWeight:"bold", textDecoration:'underline', cursor:'pointer'}}>my current Résumé</a></li>
+                    <li>For a full view of my history/skills, please view <Link to='/resume' style={{fontWeight:"bold", textDecoration:'underline', cursor:'pointer'}}>my current Résumé</Link></li>
                 </ul>
             </div>
         </div>
