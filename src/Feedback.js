@@ -45,9 +45,9 @@ export function FeedbackForm(props){
         <label className="fback-label">If you took time to check out my portfolio today, and would like to get in touch directly, feel free to leave me a comment with some feedback. Thank you</label>
         <div className="feedback-flex">
         <label for="fname">Name:</label>
-          <input onChange={handleNameChange} type="text" value={name} id="fname" required minLength={3} maxLength={20}></input>
+          <input className="fname-box" onChange={handleNameChange} type="text" value={name} id="fname" required minLength={3} maxLength={20}></input>
         <label for="email">Email:</label>
-          <input onChange={handleEmailChange} type="email" value={email} id="email" required minLength={5} maxLength={50}></input>
+          <input className="email-box" onChange={handleEmailChange} type="email" value={email} id="email" required minLength={5} maxLength={50}></input>
           <textarea onChange={handleChange} name="feedback" type="text" value={feedback} className="feedback-box" placeholder="Message..." required minLength={7} maxLength={1000}/>
           <button type="submit" className={props.className.submitFeedback} value="Submit">Submit</button>
           </div>
