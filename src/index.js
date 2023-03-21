@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PipsWithPaul } from './PipsWithPaul';
 import { ClifsCatalog } from './ClifsCatalog';
 import { Resume } from './Resume';
+import { CCLighting } from './CCLighting';
 
 export const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,6 +18,7 @@ root.render(
     <Route path='/pipswithpaul' element={<PipsWithPaul />} />
     <Route path='/clifscatalog' element={<ClifsCatalog />} />
     <Route path='/resume' element={<Resume />} />
+    <Route path='/cclighting' element={<CCLighting />} />
   </Routes>
   </BrowserRouter>
 );

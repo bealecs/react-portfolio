@@ -285,17 +285,17 @@ h2.about {
 .main-project-dark {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: auto;
-    padding: 2%;
-    width: 80%;
+    width: 100%;
     margin-top: 2%;
 }
 .main-project-light {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: auto;
-    padding: 2%;
-    width: 80%;
+    width: 100%;
     margin-top: 2%;
 }
 .project-cards-dark {
@@ -307,6 +307,8 @@ h2.about {
     border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
+    width: 40%;
+    margin: 2%;
 }
 .project-cards-light {
     background-color: #00B8F5;
@@ -317,6 +319,8 @@ h2.about {
     border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
+    width: 40%;
+    margin: 2%;
 }
 .project-cards-light p {
     color: black;
