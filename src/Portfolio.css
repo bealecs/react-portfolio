@@ -28,6 +28,7 @@ p {
   }
   .logo-flex-dark h1 {
     font-size: 3rem;
+    width: fit-content;
   }
   .logo-flex-light h1 {
     font-size: 3rem;
@@ -131,7 +132,7 @@ p {
 }
 .welcome-container-dark {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -939,6 +940,12 @@ label {
     font-size: 3rem;
 }
 @media only screen and (max-width: 1500px) {
+    .project-cards-dark {
+        width: 45%;
+    }
+    .project-cards-light {
+        width: 45%;
+    }
     .resume img {
         width: 50%;
     }
@@ -998,6 +1005,7 @@ label {
     }
     .project-cards-dark {
         margin: 2%;
+        width: 60%;
     }
     .main-project-light {
         flex-wrap: wrap;
@@ -1005,6 +1013,7 @@ label {
     }
     .project-cards-light {
         margin: 2%;
+        width: 60%;
     }
     .skill-cards-dark {
         width: 70%;
@@ -1119,6 +1128,15 @@ label {
         font-size: 0.9rem;
     }
      
+}
+@media only screen and (max-width: 750px) {
+    .project-cards-dark {
+        width: 100%;
+    }
+    .project-cards-light {
+        width: 100%;
+    }  
+
 }
 @media only screen and (max-width: 500px) {
     .feedback-flex {
